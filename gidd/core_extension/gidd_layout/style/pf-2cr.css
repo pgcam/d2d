@@ -1,0 +1,46 @@
+#header, #footer { 
+	clear: both; 
+	float: left; 
+	width: 100%;
+}
+
+#header {
+	height: 125px;
+}	
+
+#footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.gidd-wrapper{
+	background-color: #FFF;
+	min-width: 780px;
+	max-width: 1260px;
+	margin: 0 auto;
+}
+
+.gidd-page{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.gidd-content, .col1{
+	min-height: 500px;
+}
+.gidd-content{
+	position: relative;
+}
+
+.col1{
+	padding-right: 230px;
+	padding-top: 15px;
+}
+
+.col2{
+	width: 180px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	overflow: hidden;
+}

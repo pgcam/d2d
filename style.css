@@ -1,0 +1,166 @@
+/*
+Theme Name: Door2Door
+Theme URI: http://www.d2d-cambodia.com/
+Description: Door2Door food order for Cambodia
+Author: Vichet Sen
+Author URI: http://gidd.org
+Version: 1.0.0
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-menu, theme-options
+
+*/
+
+a{ outline: none; }
+
+.gidd-wrapper{ background-color: transparent; width: 100%; max-width: 100%; }
+.gidd-page{ padding: 0; width: 980px; margin: 0 auto; position: relative; background-color: #FFF; }
+.gidd-page .col2{ width: 200px; }
+.gidd-content, .col1{ min-height: 700px; }
+
+body{ background: #ff9900 url('images/bg-smoke.jpg') no-repeat center top;  font-size: 12px; color: #000; }
+body.home{ background: #ff9900 none; }
+
+#header{ height: 120px; background: url('images/bg-header.jpg') repeat-x; }
+.home #header{ background: none; }
+#footer{ height: 60px; background-color: #ff9900; padding-top: 0; }
+.fullpage{ background-color: transparent; }
+.fullpage .col1{ margin: 0; background-color: transparent; height: 610px; }
+.gidd-content{ padding: 20px; }
+
+.brand h1, .brand h2{ margin-left: 15px; padding-top: 7px; }
+.brand h1 a span, .brand h2 a span{ display: none; }
+.brand h1 a, .brand h2 a{ background: url('images/logo.png') no-repeat; display: block; width: 447px; height: 101px; }
+
+#slogan{ width: 381px; height: 66px; background: url('images/slogan.jpg') no-repeat; position: absolute; top: 44px; right: 131px;  }
+.home #slogan{ background: none; }
+
+.social{ position: absolute; top: 60px; right: 15px; list-style: none; z-index: 99; }
+.social li{ float: left; }
+.social li a span{ display: block; visibility: hidden; }
+.social li a{ display: block; width: 53px; height: 65px; }
+.social li a#tw{ background: url('images/social.png') no-repeat; }
+.social li a#fb{ background: url('images/social.png') no-repeat -50px 0; }
+
+
+#menu-primary{ position: absolute; top: 0; right: 20px; z-index: 100;}
+#menu-primary li{ float: left; list-style: none; margin-left: 10px; background-color: #f90; padding: 3px 10px; }
+#menu-primary li{ -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; }
+#menu-primary li a{ color: #FFF; font-weight: bold; text-transform: uppercase; }
+
+
+#menu-secondary{ list-style: none; padding-top: 30px; font-size: 12px; padding-left: 130px; }
+#menu-secondary li{ float: left; margin-right: 40px; }
+#menu-secondary li a{ color: #000; font-weight: bold; text-transform: uppercase; }
+#menu-secondary li a:hover{ color: #FFF; }
+
+
+#footer-logo a{  display: block; width: 80px; height: 100px; background: url('images/pgc_footer.png') no-repeat; position: absolute; bottom: -53px; left: 0;}
+
+
+#contact_form{ width: 500px; height: 200px; }
+#contact_form{ -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;  }
+#contact_form label{ display: block; width: 140px; float: left; }
+.popup-head{ width: 100%; height: 19px; }
+.ph-left{ float: left; width: 5px; height: 19px; background: url('images/ph_left.png') no-repeat; }
+.ph-middle{ float: left; height: 19px; background: url('images/ph_middle.png') repeat-x; }
+.ph-right{ float: left; width: 6px; height: 19px; background: url('images/ph_right.png') no-repeat;  }
+
+#contact_form .ph-middle{ width: 489px; }
+
+.popup-content{ background-color: #fecc09; padding: 25px;  }
+#contact_form .popup-content  label{ text-transform: uppercase; font-size: 11px; font-weight: bold; }
+#contact_form .popup-content .ctext{ background-color: #ff9900; border: 1px solid #efefef; padding: 3px 5px; width: 270px; margin-bottom: 15px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+#contact_form #contactsubmit{ width: 104px; height: 43px; border: 0 none; background: url( 'images/contact.png' ); position: absolute; bottom: -35px; left: 20px; }
+#contact_form #contactsubmit:hover{ cursor: pointer; }
+#contact_form textarea.ctext{ height: 80px; }
+
+#member a{ font-size: 14px; padding-right: 10px; }
+
+#loginform{ margin-top: 40px; }
+#loginform, #member{ margin-left: 300px; }
+#loginform input{ padding: 3px 5px; margin-bottom: 5px; width: 170px; }
+#loginform #wp-submit{ width: 80px; }
+
+
+#term-condition, #about-d2d{ width: 700px; }
+#term-condition .ph-middle, #about-d2d .ph-middle{ width: 689px; }
+#term-condition .popup-content, #about-d2d .popup-content{ min-height: 400px; background: #FECC09 url('images/d2d_logo.png') no-repeat center bottom; padding-bottom: 50px; }
+#about-d2d h2{ width: 354px; height: 42px; background: url('images/about_d2d_online.png') no-repeat; margin: 0 auto; margin-bottom: 10px; }
+#about-d2d h2 span{ display: none; }
+
+.term-title span{ display: none; visibility: hidden; }
+.term-title{ width: 294px; height: 35px; background: url('images/terms-conditions.jpg') no-repeat; margin: 0 auto; margin-bottom: 10px; }
+.term-content, .about-content{ text-transform: uppercase; font-size: 11px; }
+
+.admin_menu{ background-color: transparent; padding-left: 130px; }
+.admin_menu li{ float: left; margin-right: 35px; padding-top: 5px; text-transform: uppercase; padding-bottom: 20px; list-style: none; }
+.admin_menu li a{ text-transform: uppercase; color: #000; }
+
+#home-advert img{ margin: 0; padding: 0; border: 0 none; }
+#home-advert li{ float: left; margin-right: 17px; list-style: none; }
+#home-advert li.last-advert{ margin-right: 0; }
+#home-advert ul{ margin: 0; padding: 0; }
+.home-left{ position: relative; }
+#home-advert{ position: absolute; top: 293px; left: 0; }
+#master-media a{ display: block; width: 89px; height: 56px; background: url('images/master.png') no-repeat; position: absolute; bottom: -20px; right: 0; }
+
+
+.col2 #food_search{ border: 2px solid #CCC; padding: 5px; height: 110px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
+.col2 #searchform #s{ width: 150px; margin-left: 5px; font-size: 11px; border: 1px #CCC solid;}
+.col2 #searchform #s{ -moz-box-shadow: inset 2px 2px 2px #CCC; -webkit-box-shadow: inset 2px 2px 2px #CCC; box-shadow: inset 2px 2px 2px #CCC; }
+.col2 #searchform{ margin: 0; }
+
+.col2 ul.cuisine_list{ padding-bottom: 20px; border: 2px solid #CCC; border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; }
+.col2 ul.cuisine_list h3{ margin: 0; margin-top: -2px; background-color: #F90; color: #FFF; text-align: center; padding: 5px 0; border-bottom: 0; width: 204px; margin-left: -4px; }
+.col2 ul.cuisine_list h3{ -webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+.col2 ul.cuisine_list li{ margin-left: 30px; color: #000099; }
+
+.closeWrap{ position: absolute; top: 30px; right: 10px; width: 60px; }
+.closeWrap a{ color: #333; }
+.closeWrap span.close_text{ display: block; width: 30px; height: 16px; float: left; padding-right: 10px; font-size: 10px; text-transform: uppercase; }
+.cross{ display: block; width: 16px; height: 16px; background: url('images/cross.png') no-repeat; float: left; }
+
+#add-restoo .popup-content{ width: 450px; height: 300px; }
+#add-restoo .ph-middle{ width: 489px; }
+
+#add-restoo .popup-content .rr_input{ padding: 3px 5px; margin-bottom: 5px; width: 250px; }
+#add-restoo .popup-content label{ display: block; width: 130px; float: left; }
+#add-restoo .popup-content .rr_input, #add-restoo .popup-content textarea{ background-color: #FF9900; border: 1px solid #efefef; }
+#add-restoo .popup-content textarea{ width: 255px; height: 100px; }
+#add-restoo #rr_submit{ background: url("images/contact.png") no-repeat; width: 104px; height: 43px; border: 0 none; position: absolute; top: 270px; left: 20px; }
+#add-restoo #rr_submit:hover{ cursor: pointer; }
+#add_restoo{ display: block; width: 273px; height: 42px; background: url('images/add_restoo.png') no-repeat; position: absolute; top: 440px; left: 750px; }
+
+
+/* Rattanak */
+#regsubmit{
+	border-radius: 5px 5px 5px 5px;
+	background: none repeat scroll 0 0 #F54900;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    padding: 3px 10px;
+    width: 32px;
+	border: 0 none;
+}
+#regsubmit:hover {
+	background: none repeat scroll 0 0 #FD7D02;
+	border: 0 none;
+	text-decoration: none;
+}
+
+.btnnext, #agree-submit input {
+	border-radius: 5px 5px 5px 5px;
+	background: none repeat scroll 0 0 #F54900;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    padding: 3px 10px;
+    width: 50px;
+	border: 0 none;
+}
+.btnnext:hover, #agree-submit input:hover {
+	background: none repeat scroll 0 0 #FD7D02;
+	border: 0 none;
+	text-decoration: none;
+}
+/* end Rattanak */

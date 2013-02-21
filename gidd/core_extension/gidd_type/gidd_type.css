@@ -1,0 +1,3 @@
+/** Metabox form style */
+.postbox { background: #fafafa; }
+div.gmb-content #gdpt_wrap span.description, div.gmb-content #gdpt_wrap label.chk-label span, div.gmb-content #gdpt_wrap span.ml-description{ display: block; padding-left: 150px; }

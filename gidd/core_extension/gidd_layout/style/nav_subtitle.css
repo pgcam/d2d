@@ -1,0 +1,14 @@
+/** NAV STYLE */
+div.nav { height: 39px; }
+div.nav li { text-align: center; height: 39px; }
+div.nav li li { text-align: left; height: 27px; }
+div.nav li a { line-height: 16px; }
+div.nav ul li span, div.nav ul li strong { display: block; }
+div.nav ul li span { font-size: 12px; }
+
+ul.nav { height: 39px; }
+ul.nav li { text-align: center; height: 39px; }
+ul.nav li a { line-height: 16px; }
+ul.nav li li { text-align: left; height: 27px; }
+ul.nav li span, ul.nav li strong { display: block; }
+ul.nav li span { font-size: 12px; }

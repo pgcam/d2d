@@ -1,0 +1,10 @@
+#res-logo .mceToolbar, #res-logo tr.mceLast{ display: none; }
+#res-logo a#__6ZPyg-html, #res-logo a#__6ZPyg-tmce{ display: none; }
+
+#res-logo .wp-editor-container{ width: 170px; }
+#res-logo #__6ZPyg_tbl, #res-logo #__6ZPyg_ifr{ height: 175px !important; }
+
+input.regular-text{ padding: 2px 5px; width: 450px; }
+
+select#__XQiSE{ width: 300px; height: 250px; }
+select#__XQiSE option{ padding: 2px 0; }
