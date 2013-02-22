@@ -71,7 +71,7 @@ function ___col1_register(){
 		echo '<h2 style="margin-left: 350px; font-size: 20px; padding-top: 80px;">You already registered.</h2>';
 	
 	endif;
-		
+
 }
 
 

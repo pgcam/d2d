@@ -324,7 +324,11 @@ function get_food_by_restaurant( $restoo, $term_slug, $show_edit = false ){
 	echo '<p>';
 	
 	echo '<label for="qty">Quantity</label>';
-	echo '<input type="text" name="qty" id="qty" value="1" />';
+	echo '<div>
+			<input type="text" name="qty" id="qty" value="1" style="float:left; margin-right:20px;" />
+			<h4 id="single_price"></h4>
+		</div>';
+
 	echo '<input type="hidden" class="pfid" name="fid" value="" />';
 	
 	echo '<div class="addon"></div>';

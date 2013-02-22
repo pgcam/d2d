@@ -1,6 +1,6 @@
 form p label{ display: block; width: 100px; float: left; }
 form p input{ padding: 3px 5px; width: 400px; margin-bottom: 5px; }
-#submit{ width: 100px; margin-left: 100px; margin-top: 10px; }
+#submit{ width: 100px; margin-left: 100px; margin-top: 10px; border-radius: 5px 5px 5px 5px; background: none repeat scroll 0 0 #F54900; color: #FFFFFF; display: block;border:0 none; font-size: 16px; margin-right: 135px; padding: 3px 10px; }
 .col1 h2{ margin-bottom: 15px; font-size: 18px; text-transform: uppercase; }
 
 #user-photo .mceToolbar, #user-photo tr.mceLast{ display: none; }
@@ -17,7 +17,7 @@ form p input{ padding: 3px 5px; width: 400px; margin-bottom: 5px; }
 #map:hover{ cursor: pointer; }
 #map-ref{ display: none; background-color: #FFF; padding-bottom: 20px; }
 #map-ref img{ margin-bottom: 20px; }
-#save_thumb{ margin-right: 15px; padding: 5px 10px; float: right; }
+#save_thumb{ margin-right: 15px; padding: 5px 10px; float: right; border-radius: 5px 5px 5px 5px; background: none repeat scroll 0 0 #F54900; color: #FFFFFF; display: block;border:0 none; font-size: 16px; margin-right: 135px; padding: 3px 10px; }
 #save_thumb:hover{ cursor: pointer; }
 
 

@@ -7,7 +7,7 @@ h4{ font-size: 14px; color: #444; margin-bottom: 5px; }
 #loginform .login-submit{ padding-top: 10px; }
 
 .col1 form.frmcheckout p{ margin-bottom: 3px; }
-.col1 .btnnext{ padding: 5px 15px; margin-top: 10px; }
+.col1 .btnnext{ padding: 5px 0px; margin-top: 10px; }
 .col1 h4{ font-size: 18px; }
 
 .addr_req{ padding: 5px 15px; background-color: #f5edc5; font-size: 14px; width: 350px; color: #a90000; text-align: center; }

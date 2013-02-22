@@ -58,6 +58,9 @@ $( document ).ready(function(){
 			$('#add-to-cart').find('.multi').append( price3 );
 		}
 		
+		
+		$('#single_price').html(price);
+		
 		$('#add-to-cart').bPopup({ closeClass: 'close_popup' });
 		
 	});

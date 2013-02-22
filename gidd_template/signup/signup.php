@@ -111,6 +111,17 @@ if ( !$user_id ) {
 	$phone = esc_attr( trim( $_POST['telephone'] ) );
 	$email = esc_attr( trim( $_POST['email'] ) );
 	
+	/* Rattanak */
+	
+	$city1 = esc_attr( trim( $_POST['city1'] ) );
+	$city2 = esc_attr( trim( $_POST['city2'] ) );
+	$company = esc_attr( trim( $_POST['company'] ) );
+	$direction = esc_attr( trim( $_POST['direction'] ) );
+	$sp_dietry_need = esc_attr( trim( $_POST['sp_dietry_need'] ) );
+	$user_comment = esc_attr( trim( $_POST['user_comment'] ) );
+	
+	/* end rattanak */
+	
 	
 	$reg  = gidd_check_mail( $user_email );
 
@@ -136,6 +147,33 @@ if ( !$user_id ) {
 		$reg .= "<p>Last name is required.</p>";
 	}
 	
+	//
+	
+	if ( $city1 == "" ){
+		$reg .= "<p>City1 is required.</p>";
+	}
+	
+	if ( $city2 == "" ){
+		$reg .= "<p>City2 is required.</p>";
+	}
+	
+	if ( $company == "" ){
+		$reg .= "<p>Company is required.</p>";
+	}
+	
+	if ( $direction == "" ){
+		$reg .= "<p>Direction is required.</p>";
+	}
+	
+	if ( $sp_dietry_need == "" ){
+		$reg .= "<p>Special dietry need is required.</p>";
+	}
+	
+	if ( $user_comment == "" ){
+		$reg .= "<p>Comment is required.</p>";
+	}
+	
+	//
 	if ( $reg == "" ){
 		$user_id = wp_create_user( "$user_name", "$password", "$user_email" );				
 		wp_new_user_notification( $user_id  );				
@@ -152,7 +190,14 @@ if ( !$user_id ) {
 		update_usermeta( $user_id, 'phone1', "$phone" );
 		update_usermeta( $user_id, 'address1', "$addr1" );
 		update_usermeta( $user_id, 'address2', "$addr2" );
-
+		//
+		update_usermeta( $user_id, 'city1', "$city1" );
+		update_usermeta( $user_id, 'city2', "$city2" );
+		update_usermeta( $user_id, 'company', "$company" );
+		update_usermeta( $user_id, 'direction', "$direction" );
+		update_usermeta( $user_id, 'sp_dietry_need', "$sp_dietry_need" );
+		update_usermeta( $user_id, 'user_comment', "$user_comment" );
+		//
 		/*** SAVE MAP */
 		//Get the new coordinates to crop the image.
 		$mloc1 = $_POST['mloc1'];

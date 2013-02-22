@@ -71,5 +71,4 @@ function ___init_register_restoo(){
 
 
 
-
 /** end of send_request.php */

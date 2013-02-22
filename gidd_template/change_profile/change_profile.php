@@ -119,6 +119,17 @@ $address2 = trim ( esc_html ( $_POST['address2'] ) );
 $email = trim ( esc_html ( $_POST['email'] ) );
 $photo = esc_html ( $_POST['user_photo'] );
 
+/* Rattanak */
+
+$city1 = trim( esc_html(  $_POST['city1'] ) );
+$city2 = trim( esc_html(  $_POST['city2'] ) );
+$company = trim( esc_html( $_POST['company'] ) );
+$direction = trim( esc_html( $_POST['direction'] ) );
+$sp_dietry_need = trim( esc_html( $_POST['sp_dietry_need'] ) );
+$user_comment = trim( esc_html( $_POST['user_comment'] ) );
+
+/* end rattanak */
+
 $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
 
@@ -146,7 +157,14 @@ update_usermeta( $id, 'phone1', $phone );
 update_usermeta( $id, 'address1', $address1 );
 update_usermeta( $id, 'address2', $address2 );
 update_usermeta( $id, 'email', $email );
-
+/* end rattanak */
+update_usermeta( $id, 'city1', "$city1" );
+update_usermeta( $id, 'city2', "$city2" );
+update_usermeta( $id, 'company', "$company" );
+update_usermeta( $id, 'direction', "$direction" );
+update_usermeta( $id, 'sp_dietry_need', "$sp_dietry_need" );
+update_usermeta( $id, 'user_comment', "$user_comment" );
+/* end rattanak */
 
 wp_redirect( site_url( '/update_profile?msg="success"' ) );
 exit;

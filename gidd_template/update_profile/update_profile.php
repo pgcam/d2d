@@ -68,6 +68,15 @@ function update_profile_form(){
 			<input type="text" name="address1" value="<?php echo get_user_meta( $id, 'address1', true ); ?>" /> 
 			<a class="map_loc" id="map1" href="#">Map</a>
 		</p>
+		
+		<!-- -->
+		<div class="clearBoth"></div>
+		<p>
+		<label for="city1">City 1</label>
+		<input type="text" name="city1" id="city1" value="<?php echo get_user_meta( $id, 'city1', true); ?>" />
+		</p>
+		<!-- -->
+		
 		<div class="clearBoth"></div>
 		
 		<p>
@@ -75,6 +84,15 @@ function update_profile_form(){
 			<input type="text" name="address2" value="<?php echo get_user_meta( $id, 'address2', true ); ?>" /> 
 			<a class="map_loc" id="map2" href="#">Map</a>
 		</p>
+		
+		<!-- -->
+		<div class="clearBoth"></div>
+		<p>
+		<label for="city2">City 2</label>
+		<input type="text" name="city2" id="city2" value="<?php echo get_user_meta( $id, 'city2', true); ?>" />
+		</p>
+		<!-- -->
+		
 		<div class="clearBoth"></div>
 	
 		<p>
@@ -82,6 +100,32 @@ function update_profile_form(){
 			<input type="text" name="email" value="<?php echo get_the_author_meta( 'user_email', $id); ?>" />
 		</p>
 		<div class="clearBoth"></div>
+	
+		<!-- -->
+		<p>
+			<label for="company">Company Name</label>
+			<input type="text" name="company" id="company" value="<?php echo get_user_meta( $id,'company', true); ?>" />
+		</p>
+		<div class="clearBoth"></div>
+		
+		<p>
+			<label for="direction">Direction</label>
+			<textarea name="direction" id="direction" rows="4" cols="77"><?php echo get_user_meta( $id, 'direction', true ); ?></textarea>
+		</p>
+		<div class="clearBoth"></div>
+		
+		<p>
+			<label for="sp_dietry_need">Special dietry need</label>
+			<input type="text" name="sp_dietry_need" id="sp_dietry_need" value="<?php echo get_user_meta( $id, 'sp_dietry_need', true); ?>" />
+		</p>
+		<div class="clearBoth"></div>
+		
+		<p>
+			<label for="user_comment">Comment</label>
+			<textarea name="user_comment" id="user_comment" rows="4" cols="77"><?php echo get_user_meta( $id,'user_comment', true); ?></textarea>
+		</p>
+		<div class="clearBoth"></div>
+		<!-- -->
 	
 		<br />
 		<h4>Change Your Password</h4>
