@@ -78,7 +78,11 @@ body.home{ background: #ff9900 none; }
 #loginform{ margin-top: 40px; }
 #loginform, #member{ margin-left: 300px; }
 #loginform input{ padding: 3px 5px; margin-bottom: 5px; width: 170px; }
-#loginform #wp-submit{ width: 80px; }
+#loginform  #wp-submit { width: 80px; 
+border-radius: 5px 5px 5px 5px; background: none repeat scroll 0 0 #F54900; color: #FFFFFF; display: block;border:0 none; 
+font-size: 16px; padding: 3px 10px;}
+#loginform #wp-submit:hover { cursor: pointer; }
+
 
 
 #term-condition, #about-d2d{ width: 700px; }

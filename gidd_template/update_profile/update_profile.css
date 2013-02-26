@@ -1,6 +1,7 @@
 form p label{ display: block; width: 100px; float: left; }
 form p input{ padding: 3px 5px; width: 400px; margin-bottom: 5px; }
 #submit{ width: 100px; margin-left: 100px; margin-top: 10px; border-radius: 5px 5px 5px 5px; background: none repeat scroll 0 0 #F54900; color: #FFFFFF; display: block;border:0 none; font-size: 16px; margin-right: 135px; padding: 3px 10px; }
+#submit:hover { cursor: pointer; }
 .col1 h2{ margin-bottom: 15px; font-size: 18px; text-transform: uppercase; }
 
 #user-photo .mceToolbar, #user-photo tr.mceLast{ display: none; }
@@ -8,7 +9,6 @@ form p input{ padding: 3px 5px; width: 400px; margin-bottom: 5px; }
 
 #user-photo .wp-editor-container{ width: 175px; }
 #user-photo #user_photo_tbl, #user-photo #user_photo_ifr{ height: 175px !important; }
-
 
 #profile-sucess{ padding: 7px 10px; background-color: #f8ecc8; border: 1px solid #eeccaa; margin-bottom: 15px; font-size: 13px; text-transform: none; }
 
@@ -31,4 +31,4 @@ form p input{ padding: 3px 5px; width: 400px; margin-bottom: 5px; }
 
 #map1, #map2{ display: block; background: #F54900; color: #FFF; font-size: 16px; padding: 3px 10px; width: 32px; float: right; margin-right: 135px; }
 #map1, #map2{ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
-#map1:hover, #map2:hover{ text-decoration: none; border: 0 none; background: #fd7d02; }
+#map1:hover, #map2:hover{ text-decoration: none; border: 0 none; background: none repeat scroll 0 0 #F54900; cursor: pointer; }

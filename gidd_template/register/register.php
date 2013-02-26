@@ -75,5 +75,4 @@ function ___col1_register(){
 }
 
 
-
 /** End of register.php */
