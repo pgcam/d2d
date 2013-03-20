@@ -1,0 +1,85 @@
+body .col2{ width: 200px; }
+.single-restoo-title{ background-color: #DDD; padding: 7px 10px; border-radius: 5px; font-weight: bold; margin-bottom: 10px; }
+.single-restoo-title h2{ font-size: 16px; text-transform: uppercase; }
+ul.food-list{ margin: 0; padding: 0; }
+ul.food-list li{ list-style: none; border-bottom: 1px #ddd solid; padding: 5px 0; }
+ul.food-list h4{ margin: 0; padding: 0; float: left; }
+ul.food-list span.food-desc{ float: left; width: 360px; }
+ul.food-list span.food-price{ float: right; padding-right: 0px; }
+
+.food-group{ margin-bottom: 15px; }
+.single-gd_restaurant .single-restoo-content{ text-transform: uppercase; font-weight: bold; }
+.single-gd_restaurant .single-restoo-content img{ float: left; margin-right: 15px; }
+
+.single-restoo-title h2{ float: left; text-transform: uppercase; font-weight: bold; }
+.single-restoo-title .restoo-phone{ display: block; float: right; text-transform: uppercase; font-weight: bold; }
+.restoo-phone{ width: 150px;}
+.phone_num{line-height: 30px;}
+.food-group h2{ text-transform: uppercase; font-weight: bold; letter-spacing: -1px; font-family: "Myriad Pro", Arial, Helvetica, Tahoma, sans-serif; }
+.lone-start-photo{ margin-top: 35px; width: 200px; height: 490px; background: url('../../images/lone_star_photo.png'); }
+.foodnum{ float: left; padding-right: 10px; font-wight: bold; }
+
+.restoo-phone{ text-align: center; color: #f54900; font-weight: bold; font-size: 26px; position: absolute; top: 50px; right: 0px; }
+
+
+
+.brand h1 a, .brand h2 a{ background: url('../../images/sublogo.png') no-repeat; }
+.brand{ background: url('../../images/chief.png') no-repeat top left; height: 120px; }
+
+#foodsubmit{ width: 120px; height: 51px; border: 0 none; background: url('../../images/search-small.png') no-repeat; cursor: pointer; }
+#searchform{ height: 140px; }
+#searchform input{ padding: 5px; width: 120px; font-size: 16px; color: #999; margin-bottom: 0px; border: 0 none;  margin-top: 5px; margin-left: 43px; }
+#searchform select{ padding: 5px; width: 260px; font-size: 16px; color: #999; margin-bottom: 0px; border: 0 none; }
+
+
+#searchform textarea{ overflow: hidden; text-align: center; width: 176px; border: 0 none; resize: none; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 14px; font-weight: bold; text-transform: uppercase; padding: 10px; height: 65px; color: #999; border: 2px #CCC solid;  }
+#searchform textarea{ border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px;  }
+#searchform select#restoo{ border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;  }
+#searchform select#restoo{ border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; }
+
+.restoo-phone-bottom{ text-align: center; color: #f54900; font-weight: bold; font-size: 26px; float: right;  }
+
+
+
+.restoo{ margin-bottom: 15px; text-transform: uppercase; position: relative; }
+.restoo .restoo-header{ background-color: #EEE; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 10px; margin-bottom: 10px; }
+.restoo .restoo-title{ float: left; margin-right: 10px; }
+.restoo .restoo-title{ font-weight: bold; font-size: 18px; }
+.restoo .restoo-phone{ float: right; font-weight: bold; font-size: 18px; }
+.restoo .restoo-address{ font-weight: bold; color: #777; font-size: 18px; }
+.restoo-content{ line-height: 20px; font-weight: bold; padding-right: 180px; padding-left: 170px; position: relative;  min-height: 150px; }
+.restoo-content span.cuisine-type{ display: block; margin-bottom: 10px; }
+.restoo-content img{ float:left; display: block; margin-right: 15px; margin-bottom: 10px; position: absolute; top: 0; left: 0; }
+.view-menu a{ display: block; padding: 5px 20px; width: 80px; background-color: #e5e5e5; color: #000; font-size: 14px; font-weight: bold; text-align: center; }
+.view-menu a{ -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; position: absolute; top: 60px; right: 20px; }
+
+
+.restoo-info .restoo-time, .restoo-info .restoo-map, .restoo-info .restoo-charge, .restoo-info .restoo-method, .restoo-info .restoo-waiting{ display: block; float: left; width: 120px; }
+.restoo{ font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 14px; }
+
+.restoo-time, .restoo-map, .restoo-charge, .restoo-method, .restoo-waiting{ color: #777; }
+
+.single-restoo-content{ padding-left: 170px; padding-right: 160px; }
+.restoo-lbl{float: left;}
+.restoo-sale{ padding-left: 120px; display: block; width: 200px;}
+.single_restoo{ position: relative; }
+.restoo-logo{ position: absolute; top: 50px; left: 0; }
+
+.food-list .foodnum{ width: 15px; display: block; }
+.food-list h4{ width: 170px; display: block; }
+.food-list .food-desc{ display: block; padding-left: 10px; }
+.food-list .food-price{ display: block; }
+.food-list .food-price-2, .food-list .food-price-3{ display: block; float: right; }
+.food-list .food-price, .food-list .food-price-2, .food-list .food-price-3{ padding-left: 10px; }
+.time{ float: right; padding-right: 10px; color: #777;}
+
+.food-list h4 a{ font-weight: bold; }
+
+.addon_price{ float: right; }
+.addon_title{ padding-left: 205px; }
+
+
+
+
+.restoo_title{ font-size: 14px; background-color: #efefef; color: #444; text-transform: uppercase; padding: 5px 10px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; font-weight: bold; }
+.del_food{ float: right; padding-left: 10px; }

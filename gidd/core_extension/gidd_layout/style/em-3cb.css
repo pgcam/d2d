@@ -1,0 +1,53 @@
+#header, #footer { 
+	clear: both; 
+	float: left; 
+	width: 100%; 
+}
+.colmask { 
+	clear: both; 
+	float: left; 
+	width: 100%; 
+	position: relative; 
+	overflow: hidden; 
+	background-color: #FFF; 
+}
+.blogstyle { 
+	background: #CDEAFF; 
+}
+.blogstyle .colmid { 
+	float: left; 
+	width: 200%; 
+	margin-left: -12em; 
+	position: relative; 
+	right: 100%; 
+	background: #cfc; 
+}
+.blogstyle .colleft { 
+	float: left; 
+	width: 100%; 
+	margin-left: -14em; 
+	background: #FFF; 
+}
+.blogstyle .col1wrap { 
+	float: left; 
+	width: 50%; 
+	padding-bottom: 1em; 
+}
+.blogstyle .col1 {  
+	margin: 0 1em 0 27em; 
+	position: relative; 
+	left: 100%; 
+	overflow: hidden; 
+}
+.blogstyle .col2 { 
+	float: right; 
+	width: 12em; 
+	position: relative; 
+	left: 13em; 
+}
+.blogstyle .col3 { 
+	float: right; 
+	width: 10em; 
+	position: relative; 
+	left: 33em; 
+}

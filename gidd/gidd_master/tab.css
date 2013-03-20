@@ -1,0 +1,12 @@
+
+/*** default style for wp-admin ***/
+.wp-admin .gidd-tab{ background-color: #f0f0f0; height: 30px; padding-top: 5px; margin-top: 0; padding-left: 10px; margin: -6px -10px 0 -10px; border-top: 1px solid #fafafa; border-bottom: 1px solid #dfdfdf; }
+.wp-admin .gidd-tab li{ float: left; }
+.wp-admin .gidd-tab li a{ text-decoration: none; color: #888; padding: 7px 10px 0 10px; margin-right: 2px; background-color: #fafafa; height: 22px; border: 1px solid #dfdfdf; border-bottom: 0 none; display: block; }
+.wp-admin .gidd-tab li a{ -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+.wp-admin .gidd-tab li a:hover{ background-color: #f5f5f5; color: #dd4514; }
+.wp-admin .gidd-tab li a.tab-active{ background-color: #444; color: #FFF; }
+.wp-admin .gidd-tab li a.gd-tabitem-first{ background-color: #444; color: #FFF; }
+.wp-admin .gidd-tab-wrap .tabitem-content{ min-height: 50px; }
+.wp-admin .gidd-tab-wrap .tabitem-content{ display: none; }
+.wp-admin .gidd-tab-wrap .tabitem-content-first{ display: block; }

@@ -1,0 +1,9 @@
+/*.col2{ padding-top: 30px; }
+.col2{ width: 425px; }
+.col1{ padding-right: 445px; }
+*/
+input{ width: 200px; padding: 2px 3px; }
+input.button-primary{ width: 80px; }
+
+.success_info{ display: block; padding: 10px; background-color: #F56108; color: #FFF; margin-bottom: 20px; font-weight: bold; font-size: 14px; }
+.success_info .food_add_success{ color: yellow; }

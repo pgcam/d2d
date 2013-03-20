@@ -1,0 +1,37 @@
+#header, #footer { 
+	clear: both; 
+	float: left; 
+	width: 100%;
+}
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;
+	overflow:hidden;
+}
+/* Full page settings */
+.fullpage {
+	background:#fff;		/* page background colour */
+}
+.fullpage .col1 {
+	width:96%;			/* page width minus left and right padding */
+	left:2%;			/* page left padding */
+}

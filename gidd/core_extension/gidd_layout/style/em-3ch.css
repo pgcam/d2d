@@ -1,0 +1,60 @@
+#header, #footer { 
+	clear: both; 
+	float: left; 
+	width: 100%; 
+}
+.colmask { 
+	clear: both; 
+	float: left; 
+	width: 100%; 
+	position: relative; 
+	overflow: hidden; 
+	background-color: #fff; 
+}
+.holygrail { 
+	background: #CDEAFF; 
+}
+.holygrail .colmid { 
+	float: left; 
+	width: 200%; 
+	margin-left: -12em; 
+	position: relative; 
+	right: 100%; 
+	background: #fff; 
+}
+.holygrail .colleft { 
+	float: left; 
+	width: 100%; 
+	margin-left: -50%; 
+	position: relative; 
+	left: 26em; 
+	background: #CFC; 
+}
+.holygrail .col1wrap { 
+	float: left; 
+	width: 50%; 
+	position: relative; 
+	right: 12em; 
+	padding-bottom: 1em; 
+}
+.holygrail .col1 { 
+	margin: 0 15em 0 13em; 
+	position: relative; 
+	left: 200%; 
+	overflow: hidden; 
+}
+.holygrail .col2 { 
+	float: left; 
+	float: right; 
+	width: 12em; 
+	position: relative; 
+	right: 1em; 
+}
+.holygrail .col3 { 
+	float: left; 
+	float: right; 
+	width: 10em; 
+	margin-right: 3em; 
+	position: relative; 
+	left: 50%; 
+}

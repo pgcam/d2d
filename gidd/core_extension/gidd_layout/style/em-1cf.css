@@ -1,0 +1,18 @@
+#header, #footer { 
+	clear: both; 
+	float: left; 
+	width: 100%;
+}
+.colmask { 
+	clear: both; 
+	float: left; 
+	width: 100%; 
+	position: relative; 
+	overflow: hidden; 	
+}
+.fullpage { 
+	background: #FFF;
+}
+.fullpage .col1 { 
+	margin: 0 1em; 
+}

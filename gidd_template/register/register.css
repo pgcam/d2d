@@ -1,0 +1,43 @@
+#agreement_page h2{ font-size: 16px; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; }
+#agreeform{ margin-top: 15px; }
+#chk_agree{ margin-right: 10px; }
+#agree-submit{ padding-top: 15px; }
+#agree-submit input{ padding: 4px 10px; display: block; width: 70px; }
+#agree-submit input:hover{ cursor: pointer; }
+#agree small{ display: block; padding-left: 25px; color: #555; }
+
+.agree_err{ padding: 7px 10px; background-color: #f8ecc8; border: 1px solid #eeccaa; margin-bottom: 15px; text-align: center; font-size: 14px; }
+
+
+
+.register-form h2{ font-size: 16px; text-transform: uppercase; font-weight: bold; margin-bottom: 15px; }
+.register-form p{ margin-bottom: 10px; }
+.register-form p label{ display: block; float: left; width: 100px; }
+.register-form p input{ width: 300px; padding: 3px 5px; }
+.register-form #regsubmit{ width: 100px; padding: 5px 5px; margin-left: 100px; }
+#regsubmit {
+	border-radius: 5px 5px 5px 5px;
+	background: none repeat scroll 0 0 #F54900;
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    padding: 3px 10px;
+	border: 0 none;
+	cursor: pointer;
+}
+
+
+.reg_err{ background-color: #f8ecc8; border: 1px solid #eeccaa; padding: 5px 10px; margin-bottom: 15px; }
+.reg_success{ text-align: center; margin-left: 230px; padding-top: 150px; }
+.reg_success h2{ font-size: 28px; }
+.reg_success h4{ font-size: 18px; color: #777; font-weight: normal; line-height: 28px; }
+
+
+#map:hover{ cursor: pointer; }
+#map-ref{ display: none; background-color: #FFF; padding-bottom: 20px; }
+#map-ref img{ margin-bottom: 20px; }
+#save_thumb{ margin-right: 15px; padding: 5px 10px; float: right; }
+#save_thumb:hover{ cursor: pointer; }
+
+#map1, #map2{ display: block; background: #F54900; color: #FFF; font-size: 16px; padding: 3px 10px; width: 32px; float: right; margin-right: 235px; }
+#map1, #map2{ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
