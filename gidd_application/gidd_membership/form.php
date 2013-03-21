@@ -73,6 +73,13 @@ function show_register_form(){
 	echo '</p>';
 	
 	echo ___clearBoth();
+	
+	echo '<p>';
+	echo '<label for="city1">City 1</label>';
+	echo '<input type="text" name="city1" id="city1" />';
+	echo '</p>';
+	
+	echo ___clearBoth();
 		
 	echo '<p>';
 	echo '<label for="address2">Address 2</label>';
@@ -80,6 +87,13 @@ function show_register_form(){
 	echo '<a class="map_loc" id="map2" href="#">Map</a>';
 	echo '</p>';
 
+	echo ___clearBoth();
+	
+	echo '<p>';
+	echo '<label for="city2">City 2</label>';
+	echo '<input type="text" name="city2" id="city2" />';
+	echo '</p>';
+	
 	echo ___clearBoth();
 		
 	echo '<p>';
@@ -95,7 +109,35 @@ function show_register_form(){
 	echo '</p>';
 	
 	echo ___clearBoth();
-		
+	
+	echo '<p>';
+	echo '<label for="company">Company Name</label>';
+	echo '<input type="text" name="company" id="company" />';
+	echo '</p>';
+	
+	echo ___clearBoth();
+	
+	echo '<p>';
+	echo '<label for="direction">Direction</label>';
+	echo '<textarea name="direction" id="direction" rows="4" cols="58"></textarea>';
+	echo '</p>';
+	
+	echo ___clearBoth();
+	
+	echo '<p>';
+	echo '<label for="sp_dietry_need">Special dietry need</label>';
+	echo '<input type="text" name="sp_dietry_need" id="sp_dietry_need" />';
+	echo '</p>';
+	
+	echo ___clearBoth();
+	
+	echo '<p>';
+	echo '<label for="user_comment">Comment</label>';
+	echo '<textarea name="user_comment" id="user_comment" rows="4" cols="58"></textarea>';
+	echo '</p>';
+	
+	echo ___clearBoth();
+	
 	echo '<input type="hidden" name="mloc1" class="mloc1" value="" />';
 	echo '<input type="hidden" name="mloc2" class="mloc2" value="" />';
 	
