@@ -47,6 +47,8 @@ function d2d_html_keywords( $keyword ){
 
 }
 
+show_admin_bar(false);
+
 
 /*
 add_filter( 'layout_home_2', 'theme_home_2' );
