@@ -86,31 +86,31 @@ function request_copy(){
 			<p>
 				<label for="fullname">Full Name:</label>
 				<input type="text" name="fullname" id="fullname" />
-				<?php echo ___clearBoth(); ?>
+				<?php //echo ___clearBoth(); ?>
 			</p>
 			
 			<p>
 				<label for="">Business/Organization:</label>
 				<input type="text" name="busorg" id="busorg" />
-				<?php echo ___clearBoth(); ?>
+				<?php //echo ___clearBoth(); ?>
 			</p>
 			
 			<p>
 				<label for="">Address:</label>
 				<input type="text" name="address" id="address" />
-				<?php echo ___clearBoth(); ?>
+				<?php //echo ___clearBoth(); ?>
 			</p>
 			
 			<p>
 				<label for="">Telephone:</label>
 				<input type="text" name="phone" id="phone" />
-				<?php echo ___clearBoth(); ?>
+				<?php //echo ___clearBoth(); ?>
 			</p>
 			
 			<p>
 				<label for="">Message:</label>
 				<textarea id="message" name="message"></textarea>
-				<?php echo ___clearBoth(); ?>
+				<?php //echo ___clearBoth(); ?>
 			</p>
 			
 			<p>
