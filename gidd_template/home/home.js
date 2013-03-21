@@ -106,16 +106,24 @@ $(document).ready(function(){
 			case 17 : y = 'Q'; break;
 			case 18 : y = 'R'; break;
 			case 19 : y = 'S'; break;
-			case 12 : y = 'T'; break;
-			default : y = 'T';
+			case 20 : y = 'T'; break;
+			case 21 : y = 'U'; break;
+			case 22 : y = 'V'; break;
+			case 23 : y = 'W'; break;
+			case 24 : y = 'X'; break;
+			case 25 : y = 'Y'; break;
+			case 26 : y = 'Z'; break;
+			case 27 : y = 'AA'; break;
+			case 28 : y = 'AB'; break;
+			
+			default : y = 'Z';
 									
 		}
 		
 		var grid = y + x;
 		
-		
 		//alert( grid );
-		
+				
 		$('#loc').val(grid);
 		
 		//query restoo based on the grid
