@@ -130,16 +130,6 @@ function crop_image( $mloc ){
 	
 	}
 	
-	
-		
-	//if ( $x1 > 1000 ){ $x1 = 1000; }		
-	//if ( $x2 < 300 ){ $x2a = 300 - $x2a; $x2 = 300; }
-		
-	//if ( $y1 > 1363 ){ $y1a = $y1 - 1363; $y1 = 1363; }
-	//if ( $y2 < 328 ){ $y2a = 328 - $y2; $y2 = 328; }
-	
-	
-	
 	$scale = $thumb_width/$w;
 
 	$uid = get_current_user_id();
@@ -161,8 +151,6 @@ function crop_image( $mloc ){
 	$pin = imagecreatefrompng( get_template_directory() . '/location/pinbw.png' );
 	
 		
-	//exit;
-	
 	imagecopy( $map, $pin, $pinx, $piny, 0, 0, 48, 48 );
 	imagejpeg( $map, $cropped_bw );
 	imagedestroy( $map );

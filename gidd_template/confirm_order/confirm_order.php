@@ -101,7 +101,7 @@ function send_to_wing( $postid = "" ){
 	$url = rtrim( $url, '&' );
 		
 	if ( $url != "" ) :		
-		$ch = curl_init();
+		/*$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		//curl_setopt($ch, CURLOPT_PORT, 3135);
 		curl_setopt ($ch, CURLOPT_TIMEOUT , 500);
@@ -115,12 +115,12 @@ function send_to_wing( $postid = "" ){
 		// Get the response and close the channel.
 		$content = curl_exec($ch);
 		//echo curl_error( $ch );
-		curl_close($ch);
+		curl_close($ch);*/
 		
 		//generate invoice img
 		generate_invoice_image();
 		
-		//send to wing successful, clear the session
+		/*//send to wing successful, clear the session
 		if ( $content == "OK" ):
 		
 		//update the invoice for wing status
@@ -141,7 +141,7 @@ function send_to_wing( $postid = "" ){
 			update_post_meta( $postid, 'wing_status', 'fail' );
 			echo '<h2>Sorry! There is a problem while processing your order. Please try again.</h2>';
 			echo $content;
-		endif;
+		endif;*/
 	endif;
 
 }

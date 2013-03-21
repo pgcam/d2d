@@ -63,10 +63,10 @@ function resizeThumbnailImage($thumb_image_name, $image, $width, $height, $start
 
 function crop_image( $mloc, $uid ){
 	
-	$max_file = "3"; 							// Maximum file size in MB
-	$max_width = "500";							// Max width allowed for the large image
-	$thumb_width = "120";						// Width of thumbnail image
-	$thumb_height = "80";						// Height of thumbnail image
+	$max_file = "3"; 						// Maximum file size in MB
+	$max_width = 500;						// Max width allowed for the large image
+	$thumb_width = 300;						// Width of thumbnail image
+	$thumb_height = 328;					// Height of thumbnail image
 	
 	$x1 = intval( $mloc[0] );
 	$y1 = intval( $mloc[1] );
@@ -75,26 +75,75 @@ function crop_image( $mloc, $uid ){
 	$w = intval( $mloc[4] );
 	$h = intval( $mloc[5] );
 	$addr = $mloc[6];
+		
+	$x1 += 60; // add 60 to find pin point location
+	$y1 += 60; // add 60 to find pin point location
 
 	//Scale the image to the thumb_width set above
+	$x1 -= 150;
+	$y1 -= 164;
+	
+	$w = 300;
+	$h = 328;
+			
+	//re-calculate the box
+	$x1a = 0;
+	$y1a = 0;
+	
+	$x2a = 0;
+	$y2a = 0;
+	$pinx = 126;
+	$piny = 122;
+	
+	if ( $x1 < 0 ){
+		$x1a = abs($x1);
+		$x1 = 0;
+		$pinx -= $x1a;
+	}
+	
+	if ( $y1 > 1363 ){
+		$y1a = $y1 - 1363;
+		$y1 = 1363;
+		$piny += $y1a;	
+	}
+	
+	if ( $x1 > 1000 ){	
+		$x1a = $x1 - 1000;
+		$x1 = 1000;
+		$pinx += $x1a;	
+	}
+	
+	if ( $y1 < 0 ){	
+		$y1a = abs($y1);
+		$y1 = 0;
+		$piny -= $y1a;	
+	}
+	
 	$scale = $thumb_width/$w;
-
+	
 	$map_name = 'uid_' . $uid . '_' . $addr . '.jpg';  
 
 	$large_image_location = PARENTURL . 'images/d2d_map.jpg';
 	$thumb_image_location = 'wp-content/themes/d2d/location/' . $map_name;
 
 	$cropped = resizeThumbnailImage($thumb_image_location, $large_image_location,$w,$h,$x1,$y1,$scale);
+	
+	//for black & white map
+	$map_name_bw = 'uid_' . $uid . '_' . $addr . '_bw.jpg';
+	$large_image_location_bw = PARENTURL . 'images/d2d_map_bw.jpg';
+	$thumb_image_location_bw = 'wp-content/themes/d2d/location/' . $map_name_bw;
+	$cropped_bw = resizeThumbnailImage($thumb_image_location_bw, $large_image_location_bw,$w,$h,$x1,$y1,$scale);
+	
+	//merge the pin into the cropped map
+	$map = imagecreatefromjpeg( $cropped_bw );
+	$pin = imagecreatefrompng( get_template_directory() . '/location/pinbw.png' );
+	
+	imagecopy( $map, $pin, $pinx, $piny, 0, 0, 48, 48 );
+	imagejpeg( $map, $cropped_bw );
+	imagedestroy( $map );
+	imagedestroy( $pin );
 
 }
-
-
-
-
-
-
-
-
 
 
 $user_id = username_exists( trim( $_POST['username'] ) );
@@ -169,8 +218,7 @@ if ( !$user_id ) {
 		}
 		
 		/*** END OF SAVE_MAP */
-		
-		
+				
 		$message  = sprintf( "Welcome %s", $fname ) . "\r\n\r\n";
 		$message .= sprintf( "Thank you for registering at: %s", get_site_url() );
 		$message .= "\r\n\r\nHere is your login detail: \r\n\r\n";
@@ -181,20 +229,16 @@ if ( !$user_id ) {
 		wp_redirect( site_url('/register?reg=registered') );
 		exit();
 	}
-}	
+}		
+	
+function gidd_compare_password( $password, $repass ){
 
+	$err = "";		
+	if ($password != $repass )
+		$err .= "<p>Password doesn't match.</p>";
 	
-	
-	function gidd_compare_password( $password, $repass ){
-		
-		$err = "";		
-		if ($password != $repass )
-			$err .= "<p>Password doesn't match.</p>";
-		
-		return $err;
-	}
-
-	
-	exit;
+	return $err;
+}
+exit;
 
 /** End of register.php */

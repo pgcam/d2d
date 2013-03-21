@@ -71,7 +71,7 @@ function ___space( $num ){
 }
 
 function ___clearBoth(){
-	return '<br class="clearBoth" />';
+	return '<div class="clearBoth"></div>';
 }
 
 //auto load style & script for each page name

@@ -5,12 +5,12 @@ $(document).ready(function(){
 		if (!selection.width || !selection.height)
 			return;
 		
-		var scaleX = 200 / selection.width;
-		var scaleY = 120 / selection.height;
+		var scaleX = 300 / selection.width;
+		var scaleY = 328 / selection.height;
 
 		$('#preview img').css({
-			width: Math.round(scaleX * 1000),
-			height: Math.round(scaleY * 1287),
+			width: Math.round(scaleX * 1300),
+			height: Math.round(scaleY * 1691),
 			marginLeft: -Math.round(scaleX * selection.x1),
 			marginTop: -Math.round(scaleY * selection.y1)
 		});
