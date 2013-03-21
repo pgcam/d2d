@@ -45,7 +45,7 @@ $( document ).ready(function(){
 			//price = '<span class="price"><input type="radio" name="fprice" value="'+ price.match(/\d+\.\d+/) +'" /> ' + price + '</span>';
 			//price2 = '<span class="price2"><input type="radio" name="fprice" value="'+ price2.match(/\d+\.\d+/) +'" /> ' + price2 + '</span>';
 		
-			price = '<span class="price"><input type="radio" name="fprice" value="food_price" /> ' + price + '</span>';
+			price = '<span class="price"><input type="radio" name="fprice" value="food_price" checked="checked" /> ' + price + '</span>';
 			price2 = '<span class="price2"><input type="radio" name="fprice" value="food_price2" /> ' + price2 + '</span>';
 					
 			$('#add-to-cart').find('.multi').append( price );

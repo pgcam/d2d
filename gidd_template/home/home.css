@@ -65,8 +65,8 @@
 
 #all-cuisines .ph-middle{ width: 689px; }
 #all-restoo .ph-middle{ width: 689px; }
-#map-ref .ph-middle{ width: 1017px; }
-#map-ref .popup-content{ padding: 10px 0 0 15px; }
+#map-ref .ph-middle{ width: 1319px; }
+#map-ref .popup-content{ padding: 10px 15px 0 15px; }
 
 #all-restoo .restoo-list{ list-style: none; }
 #all-restoo .restoo-list li{ float: left; width: 200px; }
@@ -99,7 +99,7 @@
 #search_info{ width: 532px; height: 22px; background: url('../../images/search_info.png') no-repeat; position: absolute; left: 410px; top: 130px; }
 
 #map-ref .close_popup span{ display: block; width: 200px; font-size: 18px; color: #FFF; background-color: #f75900; text-align: center; font-weight: bold; padding: 10px; }
-#map-ref .closeWrap{ right: 400px; width: 200px; margin-bottom: 15px; }
+#map-ref .closeWrap{ right: 550px; width: 200px; margin-bottom: 15px; }
 #map-ref .close_popup span{ -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-#map-ref .closeWrapBottom{ top: 1380px; }
+#map-ref .closeWrapBottom{ top: 1790px; }
 #map-ref .popup-content{ padding-bottom: 35px; }

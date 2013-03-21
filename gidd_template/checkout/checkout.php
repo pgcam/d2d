@@ -33,7 +33,7 @@ function ___col1_checkout(){
 	<form class="frmcheckout" method="post" action="<?php echo site_url( '/order_summary/' ); ?>">
 		
 		<p>
-			<input type="radio" name="addr" value="address1" />
+			<input type="radio" name="addr" value="address1" checked="checked" />
 			<span><?php echo $addr1; ?></span>
 		</p>
 		
@@ -43,12 +43,12 @@ function ___col1_checkout(){
 		</p>
 		
 		<br />
-		<h3>Additional Note</h3>
+		<h3>additional note</h3>
 		<textarea name="note" style="width: 350px; height: 80px;"></textarea>
 		
 		<br />
 		<p>
-			<input type="submit" name="addrSubmit" value="Next" class="btnnext" />			
+			<input type="submit" name="addrsubmit" value="next" class="btnnext" />			
 		</p>
 		
 		
