@@ -56,7 +56,6 @@ function ___col1_checkout(){
 <?php
 	}
 
-
 }
 
 

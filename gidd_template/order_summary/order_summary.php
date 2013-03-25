@@ -29,11 +29,9 @@ function generate_invoice_id(){
 	$id .= $day . $month . $year . $count;	
 	
 	return $id;
-
 }
 
 function ___col1_order_summary(){
-
 
 	$uid = get_current_user_id();
 	$delivery = get_user_meta( $uid, $_POST['addr'], true );
@@ -47,9 +45,8 @@ function ___col1_order_summary(){
 	$name = $lname . ' ' . $fname;
 	$phone = ( $phone2 == "" ) ? $phone1 : $phone1 . ', ' . $phone2;
 	$note = trim( $_POST['note'] );
-
-
-
+	$email = get_user_meta($uid, 'email', true);
+		
 	echo '<h2 id="confirm_order">Please confirm your order</h2>';	
 	echo '<h2 style="font-weight: bold; font-size: 14px;"><span style="font-weight: normal;">Restaurant name: </span>' . get_the_title( $_SESSION['restoo'] ) . '</h2>';
 	echo '<p>';
@@ -60,6 +57,11 @@ function ___col1_order_summary(){
 	echo '<p>';
 	echo '<span>Phone: </span>';
 	echo '<span>'. $phone .'</span>';
+	echo '</p>';
+	
+	echo '<p>';
+	echo '<span>Email: </span>';
+	echo '<span>'. $email .'</span>';
 	echo '</p>';
 	
 	echo '<p>';
@@ -142,8 +144,7 @@ function ___col1_order_summary(){
 	
 	echo '</tbody>';		
 	echo '</table>';
-	
-	
+		
 	$total = number_format( $_SESSION['total'][$_SESSION['restoo']], 2 );
 	
 	echo ___space(10);
@@ -151,14 +152,12 @@ function ___col1_order_summary(){
 		echo '<h4 style="font-weight: bold; font-size: 14px;">Total: $0.00</h4>';
 	else
 		echo '<h4 style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">Total: $'. $total .'</h4>';
-		
-			
+				
 	if ( $note !="" ){
 		echo '<p class="note"><span>Note: </span>'. $note .'</p>';
 		echo ___space(10);
 	}
-	
-	
+		
 	echo '<form method="post" action="'. site_url('/confirm_order/') .'">';	
 	$addrnum = ( $_POST['addr'] == 'address1' ) ? 1 : 2;	
 	
@@ -177,10 +176,16 @@ function ___col1_order_summary(){
 	$arr = array( 	'restoo' => get_the_title( $_SESSION['restoo'] ), 'name' => $name, 
 					'phone' => $phone, 'invoice' => generate_invoice_id(), 
 					'delivery' => $delivery, 'total' => $total, 
-					'note' => $note, 'map' => $map );
+					'note' => $note, 'map' => $map, 'user_email' => $email );
 	
 	$_SESSION['invoice_confirm'] = $arr;
 	unset( $arr );
+	
+	$_SESSION['sms'] = get_post_meta( $_SESSION['restoo'], 'restoo_sms', true );
+	$_SESSION['terminal'] = get_post_meta( $_SESSION['restoo'], 'restoo_terminal', true );
+	
+	//$_SESSION['sms'] = '000000003';
+	//$_SESSION['terminal'] = '012123412';
 	
 	//generate md5 for user & pass
 	$user = md5('dddev');
@@ -188,7 +193,7 @@ function ___col1_order_summary(){
 	
 	$_SESSION['wing_user'] = $user;
 	$_SESSION['wing_pass'] = $pass;
-	
+		
 }
 
 

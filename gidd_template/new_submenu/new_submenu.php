@@ -1,7 +1,5 @@
 <?php
 
-
-
 if ( isset( $_POST['foodgroup'] ) ):
 
 	//$submenu = $_POST['__pgf24'];

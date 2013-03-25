@@ -29,7 +29,8 @@ function ___col1_new_restaurant(){
 	$method = ___text( 'Method', '' );
 	$waiting= ___text( 'AVG Waiting Time', '' );
 	
-	
+	$sms	= ___text( 'SMS Phone', 'Put one number for SMS (cannot be 023)' );
+	$tid	= ___text( 'Terminal ID', 'Put one terminal ID from Wing.' );	
 	$sub	= ___submit( 'restooSubmit', 'Add restaurant' );
 	
 	$group  = ___id( 'new_restaurant' );
@@ -47,17 +48,10 @@ function ___col1_new_restaurant(){
 	echo ___clearBoth();
 	echo ___space( 20 );
 	
-	echo ___space( 20 );
 	echo ___field( $phone, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
 		
-	echo ___space( 20 );
-	echo ___field( $email, $group );
-	echo ___clearBoth();
-	echo ___space( 20 );
-	
-	echo ___space( 20 );
 	echo ___field( $addr, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
@@ -83,10 +77,21 @@ function ___col1_new_restaurant(){
 	
 	echo ___field( $waiting, $group );
 	echo ___clearBoth();
-	echo ___space( 20 );
-	
+	echo ___space( 20 );	
 	
 	echo ___field( $web, $group );
+	echo ___clearBoth();
+	echo ___space( 20 );
+	
+	echo ___field( $email, $group );
+	echo ___clearBoth();
+	echo ___space( 20 );
+	
+	echo ___field( $tid, $group );
+	echo ___clearBoth();
+	echo ___space( 20 );
+		
+	echo ___field( $sms, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
 	

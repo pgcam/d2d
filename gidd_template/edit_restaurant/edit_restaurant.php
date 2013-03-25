@@ -28,12 +28,10 @@ function ___col1_edit_restaurant(){
 	$method = ___text( 'Method', '' );
 	$waiting= ___text( 'AVG Waiting Time', '' );
 	
-	
-	
+	$sms	= ___text( 'SMS Phone', 'Put one number for SMS (cannot be 023)' );
+	$tid	= ___text( 'Terminal ID', 'Put one terminal ID from Wing.' );
 	$sub	= ___submit( 'restooEdit', 'Update restaurant' );
-	
-	$group  = ___id( 'new_restaurant' );
-	
+	$group  = ___id( 'new_restaurant' );	
 	
 	$id = $_GET['id'];
 	
@@ -65,17 +63,10 @@ function ___col1_edit_restaurant(){
 	echo ___clearBoth();
 	echo ___space( 20 );
 	
-	echo ___space( 20 );
 	echo ___field( $phone, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
 	
-	echo ___space( 20 );
-	echo ___field( $email, $group );
-	echo ___clearBoth();
-	echo ___space( 20 );
-			
-	echo ___space( 20 );
 	echo ___field( $addr, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
@@ -102,14 +93,25 @@ function ___col1_edit_restaurant(){
 	echo ___field( $waiting, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
-	
-	
+		
 	echo ___field( $web, $group );
 	echo ___clearBoth();
 	echo ___space( 20 );
 	
+	echo ___field( $email, $group );
+	echo ___clearBoth();
+	echo ___space( 20 );
+		
+	echo ___field( $tid, $group );
+	echo ___clearBoth();
+	echo ___space( 20 );
+		
+	echo ___field( $sms, $group );
+	echo ___clearBoth();
+	echo ___space( 20 );	
+	
+	
 	echo ___field( $cusine, $group );
-
 	
 	echo "<span style='display: block; float: left; width: 150px; padding-top: 5px;'>Description</span>";
 	___editor( 'description', $group, array(), get_post_meta( $id, 'restoo_desc', true ) );
@@ -125,8 +127,6 @@ function ___col1_edit_restaurant(){
 	echo '<input type="hidden" name="restoo_id" value="'. $id .'" />';
 	echo '</form>';	
 	
-	
-
 }
 
 

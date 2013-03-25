@@ -42,6 +42,12 @@ function ___init_insert_restaurant(){
 		//email
 		$email = $restoo['__uhL1C'];
 		
+		//sms
+		$sms = $restoo['__UQfTk'];
+		
+		//terminal id
+		$tid = $restoo['__tuPuS'];
+		
 		//address
 		//$address = $restoo['__JGjKY'];
 		$address = $restoo['__4imq8'];
@@ -86,6 +92,11 @@ function ___init_insert_restaurant(){
 			if ( $waiting != "" )
 				update_post_meta( $postid, "restoo_waiting", $waiting );
 			
+			if ( $sms != "" )
+				update_post_meta( $postid, "restoo_sms", $sms );
+			
+			if ( $tid != "" )
+				update_post_meta( $postid, "restoo_terminal", $tid );			
 						
 			//set category
 			wp_set_post_terms( $postid, $cusine, 'category', true );

@@ -235,7 +235,6 @@ function get_food_by_restaurant( $restoo, $term_slug, $show_edit = false ){
 	$li .= '</div></div>';
 	
 	$li .= '<div class="menu-items">';
-			
 	$li .= '<span class="foodnum">'. trim($fid) .'</span>';
 	
 	if ( $show_edit ):

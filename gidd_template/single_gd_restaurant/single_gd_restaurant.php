@@ -49,6 +49,8 @@ function ___col1_single_gd_restaurant(){
 		$method		= get_post_meta( get_the_ID(), 'restoo_method', true );
 		$waiting	= get_post_meta( get_the_ID(), 'restoo_waiting', true );
 		$web		= get_post_meta( get_the_ID(), 'restoo_web_url', true );
+		$sms		= get_post_meta( get_the_ID(), 'restoo_sms', true );
+		$tid		= get_post_meta( get_the_ID(), 'restoo_terminal', true );
 		
 		if ( $phone == "" )
 			$phone = "N/A";
@@ -124,7 +126,7 @@ function ___col1_single_gd_restaurant(){
 	echo ___clearBoth();
 	
 	echo ___space( 10 );
-			
+					
 	$submenu = get_food_submenu( $rid ); //helper.php of gidd_food
 	$order_sm = get_post_meta( $rid, 'submenu_order', true );
 	
@@ -366,7 +368,7 @@ function ___col1_single_gd_restaurant(){
 	
 	echo ___clearBoth();
 	echo ___space(20);
-	
+		
 	echo '</div>'; //end of single restoo
 	
 }

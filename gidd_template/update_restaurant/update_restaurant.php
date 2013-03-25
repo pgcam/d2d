@@ -46,10 +46,15 @@ function ___init_update_restaurant(){
 		//web url
 		$web = $edit['__VWxM8'];
 		
+		//sms
+		$sms = $edit['__UQfTk'];
+		
+		//terminal id
+		$tid = $edit['__tuPuS'];
+		
 		
 		update_post_meta( $id, 'restoo_phone', $phone );
 		update_post_meta( $id, 'restoo_address', $address );
-		update_post_meta( $id, 'restoo_email', $email );		
 		update_post_meta( $id, 'restoo_time', $time );
 		update_post_meta( $id, 'restoo_map', $map );
 		update_post_meta( $id, 'restoo_charge', $charge );
@@ -57,6 +62,9 @@ function ___init_update_restaurant(){
 		update_post_meta( $id, 'restoo_waiting', $wait );
 		update_post_meta( $id, 'restoo_desc', $desc );
 		update_post_meta( $id, 'restoo_web_url', $web );
+		update_post_meta( $id, 'restoo_email', $email );
+		update_post_meta( $id, 'restoo_terminal', $tid );
+		update_post_meta( $id, 'restoo_sms', $sms );
 		
 		//update the data
 		wp_update_post( $post );

@@ -21,8 +21,8 @@ $note = $_GET['note'];
 $note = "Note: " . $note;
 $note = explode( '|', wordwrap( $note, 40, '|', true ) );
 
-$invoice = $_GET['invoice'];
-$invoice = "Invoice #: " . $invoice;
+$invoice_no = $_GET['invoice'];
+$invoice = "Invoice #: ";
 
 
 $no = "No.";
@@ -40,7 +40,7 @@ $logo = imagecreatefrompng( get_template_directory() . '/location/logo.png' );
 
 $font  = 16;
 $width = 384;
-$height = 820;
+$height = 830;
 
 function get_total_height( $height, $note ){
 
@@ -83,15 +83,16 @@ $black = imagecolorallocate ($image,0,0,0);
 
 imagefill( $image, 0, 0, $white );
 
-imagecopy( $image, $logo, 0, 20, 0, 0, 160, 36 );
-imagettftext( $image, 18, 0, 0, 85, $black, 'arial.ttf', $restaurant );
+imagecopy( $image, $logo, 184, 20, 0, 0, 200, 45 );
+imagettftext( $image, 20, 0, 0, 95, $black, 'arialbd.ttf', $restaurant );
 
 //invoice header
-imagettftext( $image, $font, 0, 0, 110, $black, 'arial.ttf', $invoice );
-imagettftext( $image, $font, 0, 0, 135, $black, 'arial.ttf', $name );
-imagettftext( $image, $font, 0, 0, 160, $black, 'arial.ttf', $phone );
+imagettftext( $image, $font, 0, 0, 120, $black, 'arial.ttf', $invoice );
+imagettftext( $image, $font, 0, 100, 120, $black, 'arialbd.ttf', $invoice_no );
+imagettftext( $image, $font, 0, 0, 145, $black, 'arial.ttf', $name );
+imagettftext( $image, $font, 0, 0, 170, $black, 'arial.ttf', $phone );
 
-$delY = 185;
+$delY = 195;
 foreach( $delivery as $del ){
 	if ( $del != "" ){
 		imagettftext( $image, $font, 0, 0, $delY, $black, 'arial.ttf', $del);
@@ -191,7 +192,7 @@ $map_height = $position;
 $total_height = $map_height + 460;
 $note_height = $total_height + 25;
 
-imagettftext( $image, $font, 0, 0, $total_height, $black, 'arial.ttf', $total );
+imagettftext( $image, $font, 0, 0, $total_height, $black, 'arialbd.ttf', $total );
 
 foreach( $note as $nt ){
 	if ( $nt != "" ){
@@ -229,6 +230,8 @@ $_SESSION['total'] = "";
 $_SESSION['mtotal'] = "";
 $_SESSION['numItem'] = "";
 $_SESSION['restoo'] = "";
+$_SESSION['sms'] = "";
+$_SESSION['terminal'] = "";
 
 exit;
 

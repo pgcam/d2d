@@ -16,6 +16,7 @@ function save_invoice(){
 	$inv_content  = "<p class='restoo'>Restaurant: <span>" . $_SESSION['invoice_confirm']['restoo'] . '</span></p>';
 	$inv_content .= "<p class='inv-name'>Name: <span>" . $_SESSION['invoice_confirm']['name'] . '</span></p>';
 	$inv_content .= "<p class='inv-phone'>Phone: <span>" . $_SESSION['invoice_confirm']['phone'] . '</span></p>';
+	$inv_content .= "<p class='inv-email'><span>Email: </span>". $_SESSION['invoice_confirm']['user_email'] ."</p>";
 	$inv_content .= "<p class='inv-delivery'>Delivery: <span>" . $_SESSION['invoice_confirm']['delivery'] . '</span></p>';
 	$inv_content .= "<p class='inv-total'>Total: <span>" . $_SESSION['invoice_confirm']['total'] . '</span></p>';
 	$inv_content .= "<p class='inv-note'>Note: <span>" . $_SESSION['invoice_confirm']['note'] . '</span></p>';
@@ -57,7 +58,7 @@ function send_to_wing( $postid = "" ){
 
 	// Initialize session and set URL.
 	$url = "119.82.248.100:3135?";
-
+	
 	$url .= 'USER=' . $_SESSION['wing_user'] . '&';
 	$url .= 'PASS=' . $_SESSION['wing_pass'] . '&';
 	$url .= 'INVOICE_NO=' . str_replace( "INV-", "", $_SESSION['invoice_confirm']['invoice'] ) . '&';
@@ -67,6 +68,9 @@ function send_to_wing( $postid = "" ){
 	$url .= 'ADDRESS=' . urlencode( str_replace ( "#", "", $_SESSION['invoice_confirm']['delivery'] ) ) . '&';
 	$url .= 'TOTAL=' . urlencode( $_SESSION['invoice_confirm']['total'] ) . '&';
 	$url .= 'NOTE=' . urlencode( $_SESSION['invoice_confirm']['note'] ) . '&';
+	$url .= 'TID='. $_SESSION['terminal'] .'&';
+	$url .= 'RES_NUMBER='. $_SESSION['sms'] .'&';
+	$url .= 'USER_EMAIL=' . $_SESSION['invoice_confirm']['user_email'] . '&';
 	$url .= 'inv=' . $_SESSION['invoice_confirm']['invoice'] . '.png&';
 		
 	foreach ( $_SESSION['order'] as $key => $val ){
@@ -101,7 +105,7 @@ function send_to_wing( $postid = "" ){
 	$url = rtrim( $url, '&' );
 		
 	if ( $url != "" ) :		
-		/*$ch = curl_init();
+		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
 		//curl_setopt($ch, CURLOPT_PORT, 3135);
 		curl_setopt ($ch, CURLOPT_TIMEOUT , 500);
@@ -115,12 +119,12 @@ function send_to_wing( $postid = "" ){
 		// Get the response and close the channel.
 		$content = curl_exec($ch);
 		//echo curl_error( $ch );
-		curl_close($ch);*/
+		curl_close($ch);
 		
 		//generate invoice img
 		generate_invoice_image();
 		
-		/*//send to wing successful, clear the session
+		//send to wing successful, clear the session
 		if ( $content == "OK" ):
 		
 		//update the invoice for wing status
@@ -141,7 +145,7 @@ function send_to_wing( $postid = "" ){
 			update_post_meta( $postid, 'wing_status', 'fail' );
 			echo '<h2>Sorry! There is a problem while processing your order. Please try again.</h2>';
 			echo $content;
-		endif;*/
+		endif;
 	endif;
 
 }
