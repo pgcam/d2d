@@ -78,6 +78,9 @@ function ___col1_order_summary(){
 	echo '<tbody>';
 	
 	$count = 1;
+	
+	if ( is_array( $_SESSION['order'] ) ) :
+	
 	//show the cart items from session
 	foreach ( $_SESSION['order'] as $key => $val ){
 	
@@ -107,6 +110,10 @@ function ___col1_order_summary(){
 		$count++;
 	}
 	
+	endif;
+	
+	if ( is_array( $_SESSION['morder'] ) ) :
+	
 	foreach ( $_SESSION['morder'] as $ind => $mval ){
 	
 		$ord = explode( ":", $mval[1] );
@@ -133,22 +140,21 @@ function ___col1_order_summary(){
 		echo '$' . number_format( ($ord[0] * $price), 2 );
 		
 		echo '</td>';	
-		
-		echo '<td>';
-		echo '<a href="'. site_url('/del_cart_item/?id=' . $mval[0] ) .'&ord=morder&ind='. $ind .'" class="del_item">delete</a>';
-		echo '</td>';
-					
+				
 		echo '</tr>';			
 		$count++;
 	}
 	
+	endif;
+	
 	echo '</tbody>';		
 	echo '</table>';
 		
-	$total = number_format( $_SESSION['total'][$_SESSION['restoo']], 2 );
+	$restoo_total = intval( $_SESSION['total'][$_SESSION['restoo']] );
+	$total = number_format( $restoo_total , 2 );
 	
 	echo ___space(10);
-	if ( $_SESSION['total'][$_SESSION['restoo']] == "" )
+	if ( $restoo_total == "" )
 		echo '<h4 style="font-weight: bold; font-size: 14px;">Total: $0.00</h4>';
 	else
 		echo '<h4 style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">Total: $'. $total .'</h4>';
@@ -157,18 +163,17 @@ function ___col1_order_summary(){
 		echo '<p class="note"><span>Note: </span>'. $note .'</p>';
 		echo ___space(10);
 	}
-		
-	echo '<form method="post" action="'. site_url('/confirm_order/') .'">';	
-	$addrnum = ( $_POST['addr'] == 'address1' ) ? 1 : 2;	
 	
-	/*//hidden data
-	echo '<input type="hidden" name="delivery" value="'. $delivery .'" />';
-	echo '<input type="hidden" name="delivery_no" value="'. $addrnum .'" />';
-	echo '<input type="hidden" name="note" value="'. $note .'" />';
-	echo '<input type="hidden" name="total" value="'. $total .'" />';*/
 	
-	echo '<input type="submit" class="confirm_order" value="Confirm your order" name="confirm_order" />';	
-	echo '</form>';
+	if ( $restoo_total > 0 ){
+			
+		echo '<form method="post" action="'. site_url('/confirm_order/') .'">';	
+		$addrnum = ( $_POST['addr'] == 'address1' ) ? 1 : 2;
+			
+		echo '<input type="submit" class="confirm_order" value="Confirm your order" name="confirm_order" />';	
+		echo '</form>';
+	
+	}
 	
 	
 	//build data for confirm_order and save to session
@@ -193,6 +198,8 @@ function ___col1_order_summary(){
 	
 	$_SESSION['wing_user'] = $user;
 	$_SESSION['wing_pass'] = $pass;
+	
+	$_SESSION['IMG_GEN'] = 0;
 		
 }
 

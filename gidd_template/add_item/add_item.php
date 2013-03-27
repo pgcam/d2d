@@ -88,7 +88,7 @@ function add_item_to_cart( $rid ){
 			
 			$total = $kPrice[0] * $price;
 						
-			$_SESSION['mtotal'][$rid] += $total;			
+			$_SESSION['mtotal'][$rid] = $total;			
 			
 									
 		}
@@ -110,7 +110,7 @@ function add_item_to_cart( $rid ){
 
 if ( isset( $_SESSION['total'] ) && is_array( $_SESSION['total'] ) ){
 
-	foreach( $_SESSION['total'] as $key => $val ){	
+	foreach( $_SESSION['total'] as $key => $val ){
 		
 		if ( $key == $rid ):
 			add_item_to_cart( $rid );		

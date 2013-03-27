@@ -46,6 +46,8 @@ function ___col1_edit_restaurant(){
 	$method->value = get_post_meta( $id, 'restoo_method', true );
 	$waiting->value = get_post_meta( $id, 'restoo_waiting', true );
 	$web->value = get_post_meta( $id, 'restoo_web_url', true );
+	$sms->value = get_post_meta( $id, 'restoo_sms', true );
+	$tid->value = get_post_meta( $id, 'restoo_terminal', true );
 	
 	
 	echo ___space( 20 );

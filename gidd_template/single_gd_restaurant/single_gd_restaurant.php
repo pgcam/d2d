@@ -351,8 +351,7 @@ function ___col1_single_gd_restaurant(){
 			
 		}
 	
-	}
-	
+	}	
 	
 	while( have_posts() ){
 		the_post();
@@ -381,10 +380,7 @@ function ___col2_single_gd_restaurant(){
 	while( have_posts() ): the_post();
 	
 		$id = get_the_ID();
-		
 		$desc = get_post_meta( $id, 'restoo_desc', true );
-		
-		
 		echo wpautop( $desc );
 	
 	endwhile;
@@ -443,6 +439,8 @@ function ___col2_single_gd_restaurant(){
 		
 		echo '<h4>You have item(s) in your cart.</h4>';
 		echo '<a id="btn_checkout" href="'. site_url('/checkout/') .'">Checkout</a>';
+		echo ___space(10);
+		echo '<a id="btn_empty" href="'. site_url('/empty_cart/') .'">Empty Cart</a>';
 		
 		echo '</div>';
 		
