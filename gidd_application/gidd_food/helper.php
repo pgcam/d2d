@@ -29,7 +29,7 @@ function get_food_search(){
 	<div id="food_search">	
 		<form name="thumbnail" method="post" id="searchform" action="<?php echo site_url( '/food/' ); ?>">
 			<?php echo ___space(8); ?>
-			<input type="text" name="s" id="s" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" value="Search by Food Item" />
+			<input type="text" name="s" id="s" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" value="SEARCH BY FOOD ITEM" />
 			
 			
 			<!--<select name="cat" id="scat">

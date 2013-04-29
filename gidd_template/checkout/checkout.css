@@ -14,15 +14,15 @@ h4{ font-size: 14px; color: #444; margin-bottom: 5px; }
 .addr_req{ border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
 
 .action{ border-bottom: 1px solid #CCC; padding-bottom: 5px; }
-a.btn_register{ display: block; padding: 7px 25px; background: #F75900; font-size: 16px; color: #FFF; width: 65px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-weight: bold; }
-#wp-submit{ display: block; padding: 7px 25px; background: #F75900; font-size: 16px; color: #FFF; width: 65px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-weight: bold; border: 0 none; }
+a.btn_register{ display: block; padding: 7px 25px; background: #048739; font-size: 16px; color: #FFF; width: 65px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-weight: bold; }
+#wp-submit{ display: block; padding: 7px 25px; background: #048739; font-size: 16px; color: #FFF; width: 65px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-weight: bold; border: 0 none; }
 #wp-submit:hover{ cursor: pointer; }
 
 
 .btnnext{
 
 	border-radius: 5px 5px 5px 5px;
-	background: none repeat scroll 0 0 #F54900;
+	background: none repeat scroll 0 0 #048739;
     color: #FFFFFF;
     display: block;
     font-size: 16px;

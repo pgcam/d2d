@@ -30,38 +30,24 @@ function ___col1_home(){
 	
 	echo '<div id="home-advert">';
 	
-	echo '<ul>';
 	
-	echo '<li>';
-	echo '<a href="http://www.ezecom.com.kh" target="_blank" rel="nofollow"><img src="'. PARENTURL .'images/eze.jpg" width="161px" height="106px" alt="ezecom" /></a>';
-	echo '</li>';
+	get_cycle_loop( 1, 'home1', 'advert1', 'adcount', '', '', 161, 106, 161, 106 );
+	get_cycle_loop( 1, 'home2', 'advert2', 'adcount1', '', '', 161, 106, 161, 106 );
+	get_cycle_loop( 1, 'home3', 'advert3', 'adcount2', '', '', 161, 106, 161, 106 );
+	get_cycle_loop( 1, 'home4', 'advert4', 'adcount3', '', '', 161, 106, 161, 106 );
 	
-	echo '<li>';
-	echo '<a href="http://www.smart.com.kh" target="_blank" rel="nofollow"><img src="'. PARENTURL .'images/smart.jpg" width="162px" height="107px" alt="smart" /></a>';
-	echo '</li>';
-	
-	echo '<li>';
-	echo '<a href="http://www.cocacolasabco.com" target="_blank" rel="nofollow"><img src="'. PARENTURL .'images/coke.jpg" width="161px" height="107px" alt="ezecom" /></a>';
-	echo '</li>';
-	
-	echo '<li class="last-advert">';
-	echo '<a href="http://www.anzroyal.com" target="_blank" rel="nofollow"><img src="'. PARENTURL .'images/anz.jpg" width="162px" height="107px" alt="ezecom" /></a>';
-	echo '</li>';
-	
-	
-	echo '</ul>';
 	
 	echo '</div>';	
 	echo '</div>';
 	
 	echo '<div class="home-right">';
 	
-	echo ___space(15);
+	/*echo ___space(15);
 	echo '<h2></h2>';
 	echo ___space(20);
 	echo ___space( 10 );
-	request_copy();
-	
+	request_copy();*/
+				
 	echo '</div>';
 	
 	echo ___clearBoth();
@@ -77,13 +63,13 @@ function ___after_header_home(){
 	
 	get_food_search();
 	
-	echo '<a href="#" id="home_loc"></a>';
-	echo '<div class="start_info"></div>';
-	echo '<div id="search_info"></div>';
+	//echo '<a href="#" id="home_loc"></a>';
+	//echo '<div class="start_info"></div>';
+	//echo '<div id="search_info"></div>';
 	
-	//echo '<a href="'. site_url('/restaurant/') .'" id="view-all-restoo"></a>';
+	echo '<a href="'. site_url('/restaurant/') .'" id="view-all-restoo"></a>';
 	echo '<a href="#" id="view-all-cuisines"></a>';
-	//echo '<a href="#" id="slash"></a>';
+	echo '<a href="#" id="slash"></a>';
 	
 	/**
 	<form method="post" action="<?php echo site_url( '/restaurant_location/' ); ?>" name="thumbnail">
@@ -101,12 +87,13 @@ function ___after_header_home(){
 	*/
 
 
-	echo '<a href="#" id="add_restoo"></a>';
-		
+	//echo '<a href="#" id="add_restoo"></a>';
+	
+	echo '<div id="monkey_part"></div>';
 	echo ___space(445);
 	
 	echo '<div id="easy123"></div>';
-	echo ___space( 20 );
+	echo ___space( 10 );
 	
 }
 

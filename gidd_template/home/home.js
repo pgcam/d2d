@@ -142,6 +142,13 @@ $(document).ready(function(){
 	/*$('#featured').smoothDivScroll({
 		
 	});*/
+	
+	$( '.feedback_item a' ).click( function(event){
+	
+		event.preventDefault();
+		$('#contact_form').bPopup({ closeClass: 'close_popup' });
+					
+	});
 		
 
 });

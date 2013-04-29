@@ -1,293 +1,147 @@
 body .col2{ width: 200px; }
-
 body .col2{ width: 200px; }
-
 .single-restoo-title{ background-color: #DDD; padding: 7px 10px; border-radius: 5px; font-weight: bold; margin-bottom: 10px; }
-
 .single-restoo-title h2{ font-size: 16px; text-transform: uppercase; }
-
 ul.food-list{ margin: 0; padding: 0; }
-
 ul.food-list li{ list-style: none; border-bottom: 1px #ddd solid; padding: 8px 0 2px 0; }
-
 ul.food-list h4{ margin: 0; padding: 0; float: left; }
-
 ul.food-list span.food-desc{ float: left; width: 400px; }
-
 .postid-582 ul.food-list span.food-desc{ width: 300px; }
-
 .postid-150 ul.food-list span.food-desc{ width: 270px; }
-
-
 
 ul.food-list span.food-price{ float: right; padding-right: 0px; }
 
-
-
 .food-group{ margin-bottom: 15px; }
-
 .single-gd_restaurant .single-restoo-content{ text-transform: uppercase; font-weight: bold; min-height: 160px; }
-
 .single-gd_restaurant .single-restoo-content img{ float: left; margin-right: 15px; }
 
-
-
 .single-restoo-title h2{ float: left; text-transform: uppercase; font-weight: bold; }
-
 .single-restoo-title .restoo-phone{ display: block; float: right; text-transform: uppercase; font-weight: bold; }
-
 .restoo-phone{ width: 200px;}
-
 .phone_num{line-height: 30px;}
-
 .food-group h2{ text-transform: uppercase; font-weight: bold; letter-spacing: -1px; font-family: "Myriad Pro", Arial, Helvetica, Tahoma, sans-serif; }
-
 .lone-start-photo{ margin-top: 35px; width: 200px; height: 490px; background: url('../../images/lone_star_photo.png'); }
-
 .foodnum{ float: left; padding-right: 10px; font-wight: bold; }
-
-
 
 .restoo-phone{ text-align: center; color: #048739; font-weight: bold; font-size: 26px; position: absolute; top: 50px; right: 0px; }
 
 
 
-
-
-
-
 /*.brand h1 a, .brand h2 a{ background: url('../../images/sublogo.png') no-repeat; }
-
 .brand{ background: url('../../images/chief.png') no-repeat top left; height: 120px; }*/
 
-
-
 #foodsubmit{ width: 100px; height: 35px; margin-top: 5px; margin-left: 60px; border: 0 none; background: url('../../images/search-small.png') no-repeat; cursor: pointer; }
-
 #searchform{ height: 100px; }
-
 #searchform #s{ padding: 5px; width: 120px; font-size: 12px; color: #999; margin-bottom: 0px; border: 0 none;  margin-top: 5px; }
 
-
-
 #searchform #s{ overflow: hidden; text-align: center; width: 176px; border: 0 none; resize: none; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 12px; font-weight: bold; text-transform: uppercase; padding: 10px; height: 20px; color: #999; border: 2px #CCC solid;  }
-
 #searchform #s{ border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px;  }
-
 #searchform select#restoo{ border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;  }
-
 #searchform select#restoo{ border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; }
-
-
 
 .restoo-phone-bottom{ text-align: center; color: #048739; font-weight: bold; font-size: 26px; float: right;  }
 
 
 
-
-
-
-
 .restoo{ margin-bottom: 15px; text-transform: uppercase; position: relative; }
-
 .restoo .restoo-header{ background-color: #EEE; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 10px; margin-bottom: 10px; }
-
 .restoo .restoo-title{ float: left; margin-right: 10px; }
-
 .restoo .restoo-title{ font-weight: bold; font-size: 18px; }
-
 .restoo .restoo-phone{ float: right; font-weight: bold; font-size: 18px; }
-
 .restoo .restoo-address{ font-weight: bold; color: #777; font-size: 18px; }
-
 .restoo-content{ line-height: 20px; font-weight: bold; padding-right: 180px; padding-left: 170px; position: relative;  min-height: 150px; }
-
 .restoo-content span.cuisine-type{ display: block; margin-bottom: 10px; }
-
 .restoo-content img{ float:left; display: block; margin-right: 15px; margin-bottom: 10px; position: absolute; top: 0; left: 0; }
-
 .view-menu a{ display: block; padding: 5px 20px; width: 80px; background-color: #e5e5e5; color: #000; font-size: 14px; font-weight: bold; text-align: center; }
-
 .view-menu a{ -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; position: absolute; top: 60px; right: 20px; }
 
 
-
-
-
 .restoo-info .restoo-time, .restoo-info .restoo-map, .restoo-info .restoo-charge, .restoo-info .restoo-method, .restoo-info .restoo-waiting{ display: block; float: left; width: 120px; }
-
 .restoo{ font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 14px; }
-
-
 
 .restoo-time, .restoo-map, .restoo-charge, .restoo-method, .restoo-waiting{ color: #777; }
 
-
-
 .single-restoo-content{ padding-left: 170px; padding-right: 200px; }
-
 .restoo-lbl{float: left;}
-
 .restoo-sale{ padding-left: 120px; display: block; width: 200px;}
-
 .single_restoo{ position: relative; }
-
 .restoo-logo{ position: absolute; top: 50px; left: 0; width: 150px; height: 150px; }
 
-
-
 .food-list .foodnum{ width: 15px; display: block; }
-
 .food-list h4{ width: 170px; display: block; }
-
 .food-list .food-desc{ display: block; padding-left: 10px; color: #777; }
-
 .food-list .food-price{ display: block; }
-
 .food-list .food-price-2, .food-list .food-price-3{ display: block; float: right; }
-
 .food-list .food-price, .food-list .food-price-2, .food-list .food-price-3{ padding-left: 10px; }
-
 .time{ float: right; padding-right: 10px; color: #777;}
 
 
-
-
-
 .addon_price{ float: right; padding-right: 29px; }
-
 .addon_title{ padding-left: 205px; color: #777; }
 
-
-
 #pmap_d2d{ width: 1020px; height: 570px; overflow: auto;  }
-
 #pmap{ width: 20px; height: 20px; background: url('../../images/map_icon.png') no-repeat; display: block; width: 20px; height: 20px; float: right; }
-
 #pmap_d2d #num_overlay{ position: absolute; bottom: 0; left: 0; width: 1000px; height: 31px; background: url('../../images/d2d_map_bar.png') no-repeat; }
 
-
-
 .food-pcontent{ min-width: 650px; border-radius: 5px; }
-
 .fphoto img{ margin: 0 auto; display: block; margin-bottom: 20px; }
-
 .food_photo{ display: block; width: 15px; height: 16px; background: url('../../images/camera.png') no-repeat; float: left;  margin-left: 5px;} 
-
 .menu-items h4 span{ display: block; float: left; }
-
 .item-content .food_photo{ display: none; visibility: hidden; }
-
 .food-pcontent .ph-middle{ width: 639px; }
-
 .food-pcontent .popup-content{ padding: 10px; }
-
 .food-pcontent .item-content{ padding: 15px; }
-
 .food-pcontent .food-desc{ color: #777; float: left; min-width: 500px; padding-left: 35px; }
-
 .food-pcontent .item-content h4{ margin-bottom: 0px; padding-bottom: 0; }
-
 .food-pcontent .addon_title{ padding-left: 0; min-width: 500px; display: block; float: left; padding-left: 23px; }
-
 .food-pcontent .addon_price{ float: none; }
-
 .food-pcontent .item-content .foodnum{ width: 25px; }
 
-
-
 ul.cuisine_list li a{ text-transform: uppercase; color: #333; font-size: 11px; }
-
 ul.cuisine_list h3.cuisine_title{ font-weight: bold; text-transform: uppercase; margin-bottom: 15px; font-size: 16px; }
-
 ul.cuisine_list li{ list-style: square; margin-left: 20px; color: #777; }
-
 ul.cuisine_list li a:hover{ color: #FF9900; }
-
 ul.cuisine_list h3{ border-bottom: 1px dashed #CCC; padding-bottom: 5px; }
 
 
-
-
-
 .block-content{ color: #777; padding: 5px 0; }
-
 .block-2538{ color: #333; }
-
 .single_restoo span.time{ font-size: 16px; padding-top: 3px; color: #333; }
 
-
-
 .food-pcontent .food-list .food-price{ display: block; }
-
 .food-pcontent .food-list .food-price-2, .food-pcontent .food-list .food-price-3{ display: block; float: right; }
-
 .food-pcontent .food-list .food-price, .food-pcontent .food-list .food-price-2, .food-pcontent .food-list .food-price-3{ padding-left: 10px; }
 
 
-
-
-
 #add-to-cart{ width: 400px; }
-
 #add-to-cart .ph-middle{ width: 389px; }
-
 #add-to-cart .popup-content{ height: 250px; }
-
 #add-to-cart div.addon .addon_title{ padding-left: 0; }
-
 #add-to-cart #foodsub{ margin-top: 10px; }
-
 #add-to-cart #qty{ padding: 2px 3px; margin-left: 5px; }
-
 #add-to-cart .addon{ padding-top: 5px; }
-
 #add-to-cart .price, #add-to-cart .price2, #add-to-cart .price3{ display: block; }
 
-
-
 #cart_widget{ height: 130px; border: 2px #CCC solid; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-
 #cart_widget .cart_content{ padding: 5px 10px 10px 10px; }
-
 #cart_widget .cart_head{ background-color: #f7d70a; color: #222; height: 30px; text-align: center; }
-
 #cart_widget .cart_head{ border-top-left-radius: 8px; border-top-right-radius: 8px; -moz-border-radius-topleft: 8px; -moz-border-radius-topright: 8px; -webkit-border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; }
-
 #cart_widget h4{ color: #222; font-weight: bold; font-size: 16px; padding-top: 5px; }
-
 #cart_widget h5{ font-size: 14px; margin-bottom: 0px; }
-
 #cart_widget{ text-align: center; }
-
 #cart_widget #cart-items{ display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; }
 
-
-
 #cart_popup .popup-content{ width: 450px; height: 200px; text-align: center; }
-
 #cart_popup .popup-content h2{ font-size: 18px; font-weight: bold; color: #333; }
-
 #cart_popup .ph-middle{ width: 490px; }
 
-
-
-a.add_to_cart{ width: 24px; height: 24px; background: url( '../../images/shopping_small.png' ) no-repeat center; float: right; margin-left: 5px; background-color: #048739; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
-
+a.add_to_cart{ display: block; width: 24px; height: 24px; background: url( '../../images/shopping_small.png' ) no-repeat center; float: right; margin-left: 5px; background-color: #048739; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
 .food-list li{ position: relative; }
 
-
-
 #foodsub{ border: 0 none; background: #048739; font-size: 16px; color: #fff; padding: 7px 15px; font-weight: bold; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
-
 #foodsub:hover{ cursor: pointer; }
-
 #add-to-cart .cart-item-info{ font-size: 16px; }
-
 .checkout_widget{ border: 2px #ccc solid; padding: 15px; text-align: center; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
-
 .checkout_widget h4{ font-size: 14px; margin-bottom: 5px; color: #a90000; }
-
 .checkout_widget #btn_checkout, .checkout_widget #btn_empty{ display: block; background: #048739; color: #FFF; font-size: 16px; padding: 5px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-weight: bold; }
-
 #order_note{ background-color: #c0e0cd; padding: 8px; text-align: center; font-size: 16px; font-weight: bold; }

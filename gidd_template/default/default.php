@@ -21,6 +21,11 @@ function ___header(){
 	
 	echo '<div id="slogan"></div>';
 	
+	echo '<div class="top_social">';
+	echo '<a id="ts_tw" href="http://www.twitter.com/D2DCambodia" target="_blank"></a>';
+	echo '<a id="ts_fb" href="http://www.facebook.com/door2doorcambodia" target="_blank"></a>';
+	echo '</div>';
+	
 	
 	/*//login-logout	
 	echo '<div id="member">';
@@ -58,8 +63,7 @@ function ___footer(){
 	
 		echo '</ul>';
 		
-	}
-	
+	}	
 }
 
 
@@ -173,7 +177,7 @@ function ___after_footer(){
 	echo '<div class="about-content">'. wpautop ( $about->post_content ) .'</div>';
 	
 	echo '</div>';
-	echo '<div style="height: 20px; background-color: #FECC09;"></div>';
+	echo '<div style="height: 20px; background-color: #F5D933;"></div>';
 	echo '</div>';
 	
 	
@@ -197,14 +201,14 @@ function ___after_footer(){
 	echo '<h2 class="term-title"><span>'. $term->post_title .'</span></h2>';
 	echo '<div class="term-content">'. wpautop( $term->post_content ) .'</div>';
 	echo '</div>';
-	echo '<div style="height: 20px; background-color: #FECC09;"></div>';
+	echo '<div style="height: 20px; background-color: #F5D933;"></div>';
 	echo '</div>';
 	
 	
 	
 	
 	//add_restoo popup
-	echo '<div id="add-restoo" style="display: none;">';
+	/*echo '<div id="add-restoo" style="display: none;">';
 	echo '<div class="popup-head">';
 	
 	echo '<div class="ph-left"></div>';
@@ -262,7 +266,7 @@ function ___after_footer(){
 	echo '</form>';
 	
 	echo '</div>';
-	echo '</div>';
+	echo '</div>';*/
 	
 	
 }

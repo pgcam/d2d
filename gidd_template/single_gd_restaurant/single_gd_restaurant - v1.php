@@ -16,13 +16,9 @@ function ___before_col1_single_gd_restaurant(){
 		echo ___space(20);
 		echo '<h2>Sorry. There are items in your cart. <br /> Please complete your order or empty your cart first.</h2>';
 		echo ___space(20);
-		echo '<ul style="list-style: none; text-align: left; ">';
-		echo '<li ><a href="'. site_url('/cart_items/') .'" style= "display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; text-align:center;margin-bottom:5px; width:180px; margin-left: auto; margin-right: auto;" >
-						Complete your order
-					</a></li>';
-		echo '<li><a href="'. site_url('/empty_cart/') .'" style= "display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; text-align:center;margin-bottom:5px; width:180px; margin-left: auto; margin-right: auto;" >
-						Empty your cart
-					</a></li>';
+		echo '<ul style="list-style: none; text-align: left;">';
+		echo '<li>1. <a href="'. site_url('/cart_items/') .'">Complete your order</a></li>';
+		echo '<li>2. <a href="'. site_url('/empty_cart/') .'">Empty your cart</a></li>';
 		echo '</ul>';
 		echo '</div></div>';
 	endif;
@@ -240,6 +236,7 @@ function ___col1_single_gd_restaurant(){
 			if ( ( $rid == 155 ) && ( $slug == 'salads' ) )
 				echo gidd_block_content(2921);
 			
+			
 			//the blue pumkin
 			if ( ( $rid == 153 ) && ( $slug == 'sandwich' ) )
 				echo gidd_block_content(2458);
@@ -280,116 +277,10 @@ function ___col1_single_gd_restaurant(){
 			if ( ( $rid == 1329 ) && ( $slug == 'burgers-set' ) )
 				echo gidd_block_content(2929);
 			
-			//pizza menu
-			if ( ( $rid == 161 ) && ( $slug == 'pizza-menu' ) )
-				echo gidd_block_content(3289);
-				
-			//Eden's Bar/3Mango
-			if ( ( $rid == 163 ) && ( $slug == 'khmer-cuisine' ) )
-				echo gidd_block_content(3298);
-				
-			//K’NYAY - mains
-			if ( ( $rid == 1160 ) && ( $slug == 'mains' ) )
-				echo gidd_block_content(3335);
-				
-			//LJ GRILL & CHILL - burgers
-			if ( ( $rid == 3010 ) && ( $slug == 'burgers' ) )
-				echo gidd_block_content(3360);
-			
-			//LJ GRILL & CHILL - specialty hot dogs
-			if ( ( $rid == 3010 ) && ( $slug == 'specialty-hot-dogs' ) )
-				echo gidd_block_content(3364);
-				
-			//LJ GRILL & CHILL - specialty hot dogs
-			if ( ( $rid == 3010 ) && ( $slug == 'sandwiches' ) )
-				echo gidd_block_content(3366);
-				
-			//LJ GRILL & CHILL - burritos
-			if ( ( $rid == 3010 ) && ( $slug == 'burritos' ) )
-				echo gidd_block_content(3367);
-				
-			//VEGO SALAD BAR - SALADS/WRAPS
-			if ( ( $rid == 2437 ) && ( $slug == 'salads-wraps' ) )
-				echo gidd_block_content(3575);
-				
-			//LA PÂTISSERIE - MACARONS
-			if ( ( $rid == 3009 ) && ( $slug == 'macarons' ) )
-				echo gidd_block_content(3604);
-			
-			//COMME À LA MAISON - Pizza
-			if ( ( $rid == 159 ) && ( $slug == 'pizzas' ) )
-				echo gidd_block_content(3616);
-			
-			
-			
 			
 			/*** FOOD ITEM LIST ***/
 			get_food_by_restaurant( $rid, $slug );	
 			/******/
-			
-			
-			
-			
-			//Pizza 5 - PIZZA MENU
-			if ( ( $rid == 1206 ) && ( $slug == 'pizza-menu' ) )
-				echo gidd_block_content(3437);
-			
-			//NOODLE HOUSE - OTHER DISHES
-			if ( ( $rid == 1656 ) && ( $slug == 'other-dishes' ) )
-				echo gidd_block_content(3407);
-			
-			//NATURAE - shots
-			if ( ( $rid == 973 ) && ( $slug == 'shots' ) )
-				echo gidd_block_content(3397);
-			
-			//MALONGO - the-accessories
-			if ( ( $rid == 2359 ) && ( $slug == 'the-accessories' ) )
-				echo gidd_block_content(3383);
-			
-			//LUNA D’AUTUNNO - DESSERT
-			if ( ( $rid == 1840 ) && ( $slug == 'dessert' ) )
-				echo gidd_block_content(3381);
-			
-			//LUNA D’AUTUNNO - Pizza
-			if ( ( $rid == 1840 ) && ( $slug == 'pizza' ) )
-				echo gidd_block_content(3379);
-			
-			//LJ GRILL & CHILL - burgers
-			if ( ( $rid == 3010 ) && ( $slug == 'burgers' ) )
-				echo gidd_block_content(3362);
-			
-			//Cold Sandwiches
-			if ( ( $rid == 3007 ) && ( $slug == 'cold-sandwiches' ) )
-				echo gidd_block_content(3273);
-			
-			//sweet
-			if ( ( $rid == 154 ) && ( $slug == 'hot-drinks' ) )
-				echo gidd_block_content(3262);
-			
-			
-			//sweet
-			if ( ( $rid == 153 ) && ( $slug == 'ice-cream' ) )
-				echo gidd_block_content(3260);
-			
-			//sweet
-			if ( ( $rid == 153 ) && ( $slug == 'sweets' ) )
-				echo gidd_block_content(3254);
-			
-			//burger
-			if ( ( $rid == 153 ) && ( $slug == 'burgers' ) )
-				echo gidd_block_content(3248);
-			
-			//pasta
-			if ( ( $rid == 153 ) && ( $slug == 'pasta' ) )
-				echo gidd_block_content(3243);
-			
-			//wraps
-			if ( ( $rid == 152 ) && ( $slug == 'wraps' ) )
-				echo gidd_block_content(3210);
-			
-			//bread
-			if ( ( $rid == 150 ) && ( $slug == 'breads' ) )
-				echo gidd_block_content(3208);
 			
 			//t-bone
 			if ( ( $rid == 1096 ) && ( $slug == 'imported-beef' ) )

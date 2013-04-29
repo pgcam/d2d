@@ -71,7 +71,7 @@ ___sidebar( "testing", 'testing widget', 1 );
 
 
 
-add_filter('pre_get_posts',  'restrict_media');
+//add_filter('pre_get_posts',  'restrict_media');
 
 //$arg is the WP_Query object
 function restrict_media($arg) {

@@ -2,18 +2,19 @@
 .gidd-content, .col1{ min-height: 500px; }
 .gidd-page{ background-color: transparent; }
 #featured{ height: 520px; width: 980px; position: absolute; top: 0; left: 0; z-index: 0; }
-.brand{ z-index: 5; position: relative; }
-#bg_content{ height: 600px; width: 100%; border-top: 2px #FFF solid; border-bottom: 2px solid #FFF; background: #f54900; position: absolute; top: 585px; left: 0; }
-#easy123{ width: 980px; height: 240px; background: url('../../images/easy123.png') no-repeat; position: absolute; top: 548px; z-index: 10; }
-#food_search{ position: absolute; top: 430px; left: 415px; }
+.brand{ z-index: 5; position: relative; display: none; visibility: hidden; }
+#bg_content{ height: 600px; width: 100%; border-top: 2px #FFF solid; border-bottom: 2px solid #FFF; background: #f5d933; position: absolute; top: 570px; left: 0; }
+#easy123{ width: 980px; height: 240px; background: url('../../images/easy123.png') no-repeat; position: absolute; top: 540px; z-index: 10; }
+#monkey_part{ width: 133px; height: 31px; background: url('../../images/monkey_part.png') no-repeat; position: absolute; top: 570px; left: 250px; }
+#food_search{ position: absolute; top: 296px; left: 500px; }
 
-#foodsubmit{ width: 177px; height: 75px; border: 0 none; background: url('../../images/search.png') no-repeat; cursor: pointer; position: absolute; top: 10px; left: 212px; }
+#foodsubmit{ width: 161px !important; background: transparent; height: 71px; border: 0 none; cursor: pointer; position: absolute; top: 0; left: 258px; }
 #searchform{ width: 490px; height: 115px; }
 #searchform input{ padding: 5px; width: 140px; font-size: 16px; color: #999; margin-bottom: 0px; border: 0 none; }
 #searchform select{ padding: 5px; width: 260px; font-size: 16px; color: #999; margin-bottom: 0px; border: 0 none; }
 
 
-#searchform #s{ overflow: hidden; text-align: center; width: 150px; border: 0 none; resize: none; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 11px; font-weight: bold; text-transform: uppercase; padding: 5px 25px; height: 38px; color: #999;  }
+#searchform #s{ overflow: hidden; text-align: center; width: 210px; border: 0 none; resize: none; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 14px; font-weight: bold; padding: 10px 0px; height: 38px; color: #555;  }
 #searchform textarea{ border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-left-radius: 10px;  }
 #searchform select#restoo{ border-bottom-right-radius: 10px; -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px;  }
 #searchform select#restoo{ border-bottom-left-radius: 10px; -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; }
@@ -30,6 +31,8 @@
 .home-right input#reqcopy{ padding: 2px 5px; width: 100px; margin-top: 5px; margin-left: 70px; border: 0 none; height: 41px; }
 .home-right #reqcopy:hover{ cursor: pointer; }
 
+
+.colmask-home img{ background: transparent; }
 
 
 /*** ALL RESTOO ***/
@@ -54,9 +57,9 @@
 
 
 
-#view-all-restoo{ display: block; width: 262px; height: 33px; background: url('../../images/view_all_restoo.png') no-repeat; position: absolute; top: 410px; left: 415px; }
-#view-all-cuisines{ display: block; width: 214px; height: 29px; background: url('../../images/view_all_cuisines.png') no-repeat; position: absolute; top: 468px; left: 780px; }
-#slash{ display: block; width: 24px; height: 33px; background: url('../../images/slash.png') no-repeat; position: absolute; top: 412px; left: 678px; cursor: default; }
+#view-all-restoo{ display: block; width: 193px; height: 23px; background: url('../../images/view_all_restoo.png') no-repeat; position: absolute; top: 400px; left: 517px; }
+#view-all-cuisines{ display: block; width: 152px; height: 23px; background: url('../../images/view_all_cuisines.png') no-repeat; position: absolute; top: 400px; left: 730px; }
+#slash{ display: block; width: 11px; height: 25px; background: url('../../images/slash.png') no-repeat; position: absolute; top: 400px; left: 715px; cursor: default; }
 
 
 #all-cuisines ul{ list-style: none; }
@@ -73,7 +76,7 @@
 #all-restoo .restoo-list li a{ color: #000; font-weight: bold; text-transform: uppercase; }
 
 .home-left{ background: url( '../../images/home_promo.jpg' ) no-repeat; }
-.home-right{ background-color: #ff9900; }
+.home-right{ background: transparent url('../../images/phone.png') no-repeat 20px 10px; }
 .home-right h2{ background: url('../../images/title.jpg') no-repeat; width: 261px; height: 47px; position: absolute; left: 10px; top: 5px; }
 #reqcopy{ background: url('../../images/reqsubmit.jpg') no-repeat; }
 #req-book{ width: 300px; }
@@ -83,9 +86,6 @@
 
 #req-book h2#invalid_sent_title{ padding-top: 20px; padding-bottom: 20px; }
 #req-book h4{ margin-bottom: 0; padding-left: 10px;  }
-
-
-#searchform #s{ -moz-box-shadow: inset 2px 2px 2px #999; -webkit-box-shadow: inset 2px 2px 2px #999; box-shadow: inset 2px 2px 2px #999; }
 
 #map:hover{ cursor: pointer; }
 #map-ref{ display: none; }
@@ -103,3 +103,13 @@
 #map-ref .close_popup span{ -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 #map-ref .closeWrapBottom{ top: 1790px; }
 #map-ref .popup-content{ padding-bottom: 35px; }
+
+
+.social{ position: absolute; top: 493px; left: 0; list-style: none; z-index: 99; display: block; visibility: visible; }
+.social li{ float: left; }
+.social li a span{ display: block; visibility: hidden; }
+.social li a{ display: block; width: 80px; height: 76px; }
+.social li a#tw{ background: url('../../images/social.png') no-repeat; }
+.social li a#fb{ background: url('../../images/social.png') no-repeat -75px 0; }
+
+.top_social{ display: none; visibility: hidden; }

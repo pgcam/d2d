@@ -1,6 +1,5 @@
-input.regular-text{ padding: 3px 5px; width: 350px; }
-
-input[type='submit']{
+#submit {
+	width: 100px;
 	margin-top: 10px;
 	border-radius: 5px 5px 5px 5px;
 	background: none repeat scroll 0 0 #048739;

@@ -5,7 +5,7 @@ table td, table th{ padding: 3px; }
 table th{ background-color: #eee; padding: 5px; }
 
 
-.confirm_order{ display: block; font-size: 18px; font-weight: bold; color: #FFF; background-color: #F75900; padding: 7px 0; width: 180px; border: 0 none;  }
+.confirm_order{ display: block; font-size: 18px; font-weight: bold; color: #FFF; background-color: #048739; padding: 7px 0; width: 180px; border: 0 none;  }
 .confirm_order{ border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; }
 .confirm_order:hover{ cursor: pointer; }
 .note{ font-size: 14px; font-style: italic; color: #a90000; }

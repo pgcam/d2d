@@ -1,10 +1,10 @@
 .restoo{ margin-bottom: 5px; text-transform: uppercase; position: relative; min-height: 210px; }
-.restoo .restoo-header{ background-color: #feeade; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 10px; margin-bottom: 10px; }
+.restoo .restoo-header{ background-color: #F2EAB8; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 10px; margin-bottom: 10px; }
 .restoo .restoo-title{ float: left; margin-right: 10px; }
 .restoo .restoo-title{ font-weight: bold; font-size: 18px; }
-.restoo .restoo-phone{ float: right; font-weight: bold; font-size: 18px; color: #F56108; }
+.restoo .restoo-phone{ float: right; font-weight: bold; font-size: 18px; color: #048739; }
 .restoo .restoo-phone span{ color: #333; }
-.restoo .restoo-address{ font-weight: bold; color: #F56108; font-size: 18px; }
+.restoo .restoo-address{ font-weight: bold; color: #048739; font-size: 18px; }
 .restoo-content{ line-height: 20px; font-weight: bold; padding-right: 180px; padding-left: 170px; position: relative; min-height: 150px; }
 .restoo-content span.cuisine-type{ display: block; margin-bottom: 10px; }
 .restoo-content img{ float:left; display: block; margin-right: 15px; margin-bottom: 10px; position: absolute; top: 0; left: 0; }
@@ -45,4 +45,4 @@ ul.cuisine_list h3{ border-bottom: 1px dashed #CCC; padding-bottom: 5px; }
 #not-found{ color: #333; font-size: 16px; font-weight: bold; }
 #search-result{ width: 500px; margin: 0 auto; }
 #search-term-title{ font-weight: bold; font-size: 16px; text-transform: uppercase; }
-#search-term-title span{ color: #F56108; }
+#search-term-title span{ color: #048739; }
