@@ -35,6 +35,7 @@ function ___col1_order_summary(){
 
 	$uid = get_current_user_id();
 	$delivery = get_user_meta( $uid, $_POST['addr'], true );
+	$delivery_charge = get_post_meta( $_SESSION['restoo'], 'restoo_charge', true );
 	
 	$fname = get_user_meta( $uid, 'first_name', true );
 	$lname = get_user_meta( $uid, 'last_name', true );
@@ -180,7 +181,7 @@ function ___col1_order_summary(){
 	$map = "uid_" . $uid . "_map" . $addrnum . '_bw.jpg';
 	$arr = array( 	'restoo' => get_the_title( $_SESSION['restoo'] ), 'name' => $name, 
 					'phone' => $phone, 'invoice' => generate_invoice_id(), 
-					'delivery' => $delivery, 'total' => $total, 
+					'delivery' => $delivery, 'total' => $total, 'charge' => $delivery_charge,
 					'note' => $note, 'map' => $map, 'user_email' => $email );
 	
 	$_SESSION['invoice_confirm'] = $arr;
@@ -188,6 +189,7 @@ function ___col1_order_summary(){
 	
 	$_SESSION['sms'] = get_post_meta( $_SESSION['restoo'], 'restoo_sms', true );
 	$_SESSION['terminal'] = get_post_meta( $_SESSION['restoo'], 'restoo_terminal', true );
+	//$_SESSION['del_charge'] = $delivery_charge;
 	
 	//$_SESSION['sms'] = '000000003';
 	//$_SESSION['terminal'] = '012123412';

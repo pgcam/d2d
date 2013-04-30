@@ -17,11 +17,11 @@ function ___before_col1_single_gd_restaurant(){
 		echo '<h2>Sorry. There are items in your cart. <br /> Please complete your order or empty your cart first.</h2>';
 		echo ___space(20);
 		echo '<ul style="list-style: none; text-align: left; ">';
-		echo '<li ><a href="'. site_url('/cart_items/') .'" style= "display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; text-align:center;margin-bottom:5px; width:180px; margin-left: auto; margin-right: auto;" >
-						Complete your order
+		echo '<li ><a href="'. site_url('/cart_items/') .'" style= "display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; text-align:center;margin-bottom:5px;" >
+						1. Complete your order
 					</a></li>';
-		echo '<li><a href="'. site_url('/empty_cart/') .'" style= "display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; text-align:center;margin-bottom:5px; width:180px; margin-left: auto; margin-right: auto;" >
-						Empty your cart
+		echo '<li><a href="'. site_url('/empty_cart/') .'" style= "display: block; background: #048739; padding: 5px; color: #FFF; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-size: 16px; font-weight: bold; text-align:center;margin-bottom:5px;" >
+						2. Empty your cart
 					</a></li>';
 		echo '</ul>';
 		echo '</div></div>';

@@ -18,6 +18,7 @@ function save_invoice(){
 	$inv_content .= "<p class='inv-phone'>Phone: <span>" . $_SESSION['invoice_confirm']['phone'] . '</span></p>';
 	$inv_content .= "<p class='inv-email'><span>Email: </span>". $_SESSION['invoice_confirm']['user_email'] ."</p>";
 	$inv_content .= "<p class='inv-delivery'>Delivery: <span>" . $_SESSION['invoice_confirm']['delivery'] . '</span></p>';
+	$inv_content .= "<p class='inv-charge'>Delivery charge: <span>" . $_SESSION['del_charge'] . '</span></p>';
 	$inv_content .= "<p class='inv-total'>Total: <span>" . $_SESSION['invoice_confirm']['total'] . '</span></p>';
 	$inv_content .= "<p class='inv-note'>Note: <span>" . $_SESSION['invoice_confirm']['note'] . '</span></p>';
 		

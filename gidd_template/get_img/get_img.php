@@ -15,6 +15,10 @@ $delivery = $_GET['delivery'];
 $delivery = "Delivery: " . $delivery;
 $delivery = explode( '|', wordwrap($delivery, 40, "|", true) );
 
+$charge = $_GET['charge'];
+$charge = "Delivery charge: " . $charge;
+$charge = explode( '|', wordwrap($charge, 40, "|", true) );
+
 $total = $_GET['total'];
 $total = "Total: $" . $total;
 
@@ -44,12 +48,16 @@ $logo = imagecreatefrompng( get_template_directory() . '/location/logo.png' );
 
 $font  = 16;
 $width = 384;
-$height = 850;
+$height = 920;
 
 function get_total_height( $height, $note ){
 
 	if ( count( $note ) > 1 ){
 		$height = $height + ( count( $note ) * 25 ) - 25;
+	}
+	
+	if ( count( $charge ) > 1 ){
+		$height = $height + ( count( $charge ) * 25 ) - 25;
 	}
 	
 	foreach( $_SESSION['order'] as $key => $val ){
@@ -194,7 +202,16 @@ foreach( $_SESSION['morder'] as $ind => $mval ){
 
 //invoice footer
 $map_height = $position;
-$total_height = $map_height + 460;
+$charge_height = $map_height + 460;
+
+foreach( $charge as $cha ){
+	if ( $cha != "" ){
+		imagettftext( $image, $font, 0, 0, $charge_height, $black, 'arial.ttf', $cha);
+		$charge_height += 25;
+	}
+}
+
+$total_height = $charge_height;
 $note_height = $total_height + 25;
 
 imagettftext( $image, $font, 0, 0, $total_height, $black, 'arialbd.ttf', $total );
