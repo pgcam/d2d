@@ -89,7 +89,161 @@ function update_food_fields( $id ){
 	echo ___clearBoth();
 	echo ___space(20);
 	
+	//get food attribute
+	$attrs = get_post_meta( $fid, 'food_attribute', true );
+	$arr_title = array();
+	$arr_control = array();
+	$arr_value = array();
 	
+	//set values
+	foreach( $attrs as $attr ){
+		foreach ( $attr as $control => $group ){
+			$arr_control[] = $control;
+			foreach( $group as $title => $values ){
+				$arr_title[] = $title;
+				$arr_value[] = $values;
+			}
+		}						
+	}						
+?>
+	
+	<div class="attrwrap">
+	<table border=0>
+		<tr>
+			<td>
+			
+				<div class="groupA">
+					<h3>Attribute A</h3>
+					
+					
+					<span>Title </span><input class="grouptitle" name="groupATitle" type="text" value="<?php echo $arr_title[0]; ?>" />
+					
+					<span>Type </span>
+					<select name="groupAControl">
+						<option value="check" <?php if( $arr_control[0] == "check" ) echo 'selected'; ?> >Multiple Options</option>
+						<option value="radio" <?php if( $arr_control[0] == "radio" ) echo 'selected'; ?>>Single Option</option>
+					</select>
+					<br />
+					<a id="a" href="#" class="newattr">New Attribute</a>
+						<?php if ( count( $arr_value[0] ) == 0 ){  ?>
+						<p class="attribute">
+							<input type="text" value="" name="attribute_a[]" />
+							<a class="trash" href="#"></a>
+						</p>
+						<?php
+						}else{
+						
+							foreach ($arr_value[0] as $v){
+								echo '<p class="attribute"><input type="text" value="'. $v .'" name="attribute_a[]" /><a class="trash" href="#"></a><div class="clearBoth"></div></p>';
+							}
+							
+						}
+						?>
+					
+				</div>
+			
+			</td>
+			
+			
+			<td>
+			
+				<div class="groupB">
+					<h3>Attribute B</h3>
+					<span>Title </span><input class="grouptitle" name="groupBTitle" type="text" value="<?php echo $arr_title[1] ?>" />
+					<span>Type </span>
+					<select name="groupBControl">
+						<option value="check" <?php if( $arr_control[1] == "check" ) echo 'selected'; ?>>Multiple Options</option>
+						<option value="radio" <?php if( $arr_control[1] == "radio" ) echo 'selected'; ?>>Single Option</option>
+					</select>
+					<br />
+					<a id="b" href="#" class="newattr">New Attribute</a>
+						<?php if ( count( $arr_value[1] ) == 0 ){  ?>
+						<p class="attribute">
+							<input type="text" value="" name="attribute_b[]" />
+							<a class="trash" href="#"></a>
+						</p>
+						<?php
+						}else{
+						
+							foreach ($arr_value[1] as $v){
+								echo '<p class="attribute"><input type="text" value="'. $v .'" name="attribute_b[]" /><a class="trash" href="#"></a><div class="clearBoth"></div></p>';
+							}
+							
+						}
+						?>
+					
+				</div>
+			
+			</td>
+			
+			<td>
+			
+				<div class="groupC">
+					<h3>Attribute C</h3>
+					<span>Title </span><input class="grouptitle" name="groupCTitle" type="text" value="<?php echo $arr_title[2]; ?>" />
+					<span>Type </span>
+					<select name="groupCControl">
+						<option value="check" <?php if( $arr_control[2] == "check" ) echo 'selected'; ?>>Multiple Options</option>
+						<option value="radio" <?php if( $arr_control[2] == "radio" ) echo 'selected'; ?>>Single Option</option>
+					</select>
+					<br />
+					<a id="c" href="#" class="newattr">New Attribute</a>
+						<?php if ( count( $arr_value[2] ) == 0 ){  ?>
+						<p class="attribute">
+							<input type="text" value="" name="attribute_c[]" />
+							<a class="trash" href="#"></a>
+						</p>
+						<?php
+						}else{
+						
+							foreach ($arr_value[2] as $v){
+								echo '<p class="attribute"><input type="text" value="'. $v .'" name="attribute_c[]" /><a class="trash" href="#"></a><div class="clearBoth"></div></p>';
+							}
+							
+						}
+						?>
+					
+				</div>
+			
+			</td>
+			
+			<td>
+			
+				<div class="groupD">
+					<h3>Attribute D</h3>
+					<span>Title </span><input class="grouptitle" name="groupDTitle" type="text" value="<?php echo $arr_title[3]; ?>" />
+					<span>Type </span>
+					<select name="groupDControl">
+						<option value="check" <?php if( $arr_control[3] == "check" ) echo 'selected'; ?>>Multiple Options</option>
+						<option value="radio" <?php if( $arr_control[3] == "radio" ) echo 'selected'; ?>>Single Option</option>
+					</select>
+					<br />
+					<a id="d" href="#" class="newattr">New Attribute</a>
+					
+						<?php if ( count( $arr_value[3] ) == 0 ){  ?>
+						<p class="attribute">
+							<input type="text" value="" name="attribute_d[]" />
+							<a class="trash" href="#"></a>
+						</p>
+						<?php
+						}else{
+						
+							foreach ($arr_value[3] as $v){
+								echo '<p class="attribute"><input type="text" value="'. $v .'" name="attribute_d[]" /><a class="trash" href="#"></a></p>';
+							}
+							
+						}
+						?>					
+				</div>
+			
+			</td>
+		</tr>
+		
+	</table>
+	<div class="clearBoth"></div>
+	</div>	
+	
+<?php	
 	/*echo '<br /><br />';
 	echo '<h2>Extra/Add-on food if available</h2>';
 	echo ___space( 20 );

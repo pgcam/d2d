@@ -30,6 +30,9 @@ $( document ).ready(function(){
 		var price2 = $(this).parent().find('.food-price-2').html();
 		var price3 = $(this).parent().find('.food-price-3').html();
 		var price  = $(this).parent().find('.food-price').html();
+		
+		//copy attribute
+		var attr = $(this).parent().find('.attrs').html();
 
 		
 		$('#add-to-cart').find('.cart-item-info').html('');
@@ -39,6 +42,8 @@ $( document ).ready(function(){
 		$('#add-to-cart').find('.pfid').val(fid);
 		$('#add-to-cart').find('.addon').append( addon );
 		$('#add-to-cart').find('.aprice').val( addon_price );
+		$('#add-to-cart').find('.options').append( attr );
+		
 				
 		if ( price2 != '' ){
 		
@@ -58,7 +63,9 @@ $( document ).ready(function(){
 			$('#add-to-cart').find('.multi').append( price3 );
 		}
 		
-		$('#add-to-cart').bPopup({ closeClass: 'close_popup' });
+		$('#add-to-cart').bPopup({ closeClass: 'close_popup', onClose: function(){
+			$('div.options').html('');
+		} });
 		
 	});
 	

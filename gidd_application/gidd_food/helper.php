@@ -276,6 +276,61 @@ function get_food_by_restaurant( $restoo, $term_slug, $show_edit = false ){
 		$li .=  '$' . $price;	
 	$li .=  '</span>';
 	
+	$li .= '<div class="attrs" style="display: none;">';
+	
+	$attrs = get_post_meta($pid, 'food_attribute', true);
+	$count_group = 1;
+	
+	if ( is_array( $attrs ) ){
+		foreach ( $attrs as $attr ){
+			foreach( $attr as $attrk => $attrg ){
+				if ( count( $attrg ) > 0 ){
+					foreach( $attrg as $title => $attrib_items ){
+						$li .= '<div class="group'. $count_group .'">';
+						$li .= '<fieldset><legend>' . $title . '</legend>';	
+					
+						
+						foreach( $attrib_items as $v ){
+						
+						
+							if ( $v != "" ){
+							
+								if ( $attrk == "check" ){
+								
+									$att = 'attr' . $count_group ;
+								
+									$li .= '<p class="attr-ele"><label for="'. $att .'[]">';
+									$li .= '<input type="checkbox" name="'. $att .'[]" value="'. $v .'" /> ' . $v;
+									$li .= '</label></p>';				
+									
+								}else{
+								
+									$li .= '<p class="attr-ele"><label for="'. $att .'[]">';
+									$li .= '<input type="radio" name="'. $att .'[]" value="'. $v .'" /> ' . $v;
+									$li .= '</label></p>';	
+								
+								}
+								
+							}			
+						
+						
+						}
+				
+						$li .= '</fieldset></div>';
+						if ( $count_group == 2 )
+							$li .= '<div class="clearBoth"></div>';
+									
+					}
+					
+					$count_group += 1;
+				}
+			}
+		}
+	}
+	
+	$li .= '<div class="clearBoth"></div>';
+	$li .= '</div>';
+	
 	//show addon food if available
 	$li .=  '<div class="clearBoth"></div>';
 	$li .= get_food_addon( $pid );
@@ -328,6 +383,9 @@ function get_food_by_restaurant( $restoo, $term_slug, $show_edit = false ){
 	
 	echo '<div class="addon"></div>';
 	echo '<div class="multi"></div>';
+	
+	echo '<h3>Additional Options</h3>';
+	echo '<div class="options"></div>';
 	
 	echo '<input class="aprice" type="hidden" name="aprice" value="" />';
 	echo '<input type="hidden" name="prev_url" value="'. gidd_current_url() .'" />';

@@ -232,7 +232,7 @@ ul.cuisine_list h3{ border-bottom: 1px dashed #CCC; padding-bottom: 5px; }
 
 #add-to-cart .ph-middle{ width: 389px; }
 
-#add-to-cart .popup-content{ height: 250px; }
+#add-to-cart .popup-content{ min-height: 250px; }
 
 #add-to-cart div.addon .addon_title{ padding-left: 0; }
 
@@ -291,3 +291,6 @@ a.add_to_cart{ width: 24px; height: 24px; background: url( '../../images/shoppin
 .checkout_widget #btn_checkout, .checkout_widget #btn_empty{ display: block; background: #048739; color: #FFF; font-size: 16px; padding: 5px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; font-weight: bold; }
 
 #order_note{ background-color: #c0e0cd; padding: 8px; text-align: center; font-size: 16px; font-weight: bold; }
+.group1, .group2, .group3, .group4{ float: left; width: 150px; padding-right: 10px; margin-bottom: 10px; }
+fieldset{ border: 1px solid #666; padding: 10px; min-height: 120px; }
+.cart-item-info h4{ margin-bottom: 0; }
